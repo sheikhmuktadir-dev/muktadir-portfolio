@@ -1,0 +1,108 @@
+.navBar {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 99999;
+}
+
+.navLogoArea {
+  position: relative;
+}
+
+.navLogo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 0.8em;
+  font-size: var(--logo-fontsize);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navLogo span:first-child {
+  font-weight: 500;
+}
+
+.navMenu {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.navList {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navItem {
+  position: relative;
+}
+
+.navLink {
+  line-height: 1;
+  font-size: var(--navlink-fontsize);
+  font-weight: 600;
+  color: #000;
+}
+
+.navBarToggle {
+  background: transparent;
+  font-size: 2rem;
+  display: none;
+}
+
+.navBarClose {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 2rem;
+  display: none;
+  background: transparent;
+}
+
+@media (max-width: 1023.98px) {
+  .navMenu {
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    justify-content: center;
+    background: #fff;
+    transform: translate(-150%);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .navMenuShow {
+    transform: translate(0);
+    opacity: 1;
+  }
+
+  .navLogoArea {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  .navBarToggle,
+  .navBarClose {
+    display: block;
+  }
+
+  .navList {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

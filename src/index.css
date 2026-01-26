@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+:root {
+  /* btn */
+  --btn-size: 40px;
+
+  /* space */
+  --section-space: 300px 0;
+  --content-top-space: 150px 0 0;
+
+  /* bg */
+  --black-bg: #000000;
+  --white-bg: #ffffff;
+
+  /* color */
+  --black-text: #000000;
+  --white-text: #ffffff;
+
+  /* font size */
+  --logo-fontsize: 1.4rem;
+  --navlink-fontsize: 1.4rem;
+  --title-fontsize: 18rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4em;
+  background: var(--white-bg);
+  font-family: "Geist Mono", monospace;
+  color: var(--black-text);
+  overflow-wrap: break-word;
+}
+.container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: clamp(16px, 3vw, 64px);
+  padding-right: clamp(16px, 3vw, 64px);
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:focus {
+  outline: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+button:focus {
+  outline: none;
+}
+h1 {
+  font-size: 12rem;
+  font-weight: 500;
+  line-height: 1em;
+}
+h2 {
+  font-size: 10rem;
+  font-weight: 500;
+  line-height: 1em;
+}
+h3 {
+  font-size: 8rem;
+  font-weight: 500;
+  line-height: 1em;
+}
+h4 {
+  font-size: 5.5rem;
+  font-weight: 500;
+  line-height: 1.1em;
+}
+h5 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.1em;
+}
+h6 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.1em;
+}
+
+/* line area*/
+
+.lines-pattern {
+  opacity: 0.12;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  inset: 0%;
+}
+
+.line-pattern {
+  border-right: 1px solid var(--white-text);
+  width: 20%;
+  height: 100%;
+}
+
+.headingMain {
+  font-size: var(--title-fontsize);
+  position: relative;
+  text-transform: uppercase;
+  line-height: 0.8em;
+  font-weight: 400;
+  z-index: 30;
+}
+
+@media (max-width: 767.98px) {
+  :root {
+    --title-fontsize: 4.5rem;
+
+    /* space */
+    --section-space: 100px 0;
+    --content-top-space: 60px 0 0;
+  }
+
+  .lines-pattern {
+    display: none;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  :root {
+    --title-fontsize: 9rem;
+
+    /* space */
+    --section-space: 140px 0;
+    --content-top-space: 80px 0 0;
+  }
+
+  h1 {
+    font-size: 9rem;
+  }
+  h2 {
+    font-size: 7rem;
+  }
+  h3 {
+    font-size: 5rem;
+  }
+  h4 {
+    font-size: 4rem;
+  }
+  h5 {
+    font-size: 2rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+
+  .line-pattern {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279.98px) {
+  :root {
+    --title-fontsize: 12rem;
+
+    /* space */
+    --section-space: 200px 0;
+    --content-top-space: 100px 0 0;
+  }
+
+  h1 {
+    font-size: 12rem;
+  }
+  h2 {
+    font-size: 9rem;
+  }
+  h3 {
+    font-size: 6rem;
+  }
+  h4 {
+    font-size: 4rem;
+  }
+  h5 {
+    font-size: 2.5rem;
+  }
+  h6 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1599.98px) {
+  :root {
+    --title-fontsize: 14rem;
+
+    /* space */
+    --section-space: 250px 0;
+    --content-top-space: 120px 0 0;
+  }
+
+  h1 {
+    font-size: 13rem;
+  }
+  h2 {
+    font-size: 11rem;
+  }
+  h3 {
+    font-size: 8rem;
+  }
+  h4 {
+    font-size: 4.5rem;
+  }
+  h5 {
+    font-size: 2.5rem;
+  }
+  h6 {
+    font-size: 1.2rem;
+  }
+}
