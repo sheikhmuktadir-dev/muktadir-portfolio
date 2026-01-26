@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Style from "./Hero.module.css";
+import Style from "./hero.module.css";
 import { heroData } from "../../Data/Data";
 import Image from "/images/banner.webp";
 import { socialLinks } from "../../Data/Data";
