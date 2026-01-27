@@ -2,6 +2,8 @@
   position: relative;
   max-width: 100%;
   width: 100%;
+  background: var(--black-bg);
+  padding: var(--section-space);
 }
 
 .workCardGrid {
@@ -13,6 +15,10 @@
   max-width: 100%;
   width: 100%;
   z-index: 20;
+}
+
+.workText {
+  color: var(--white-text);
 }
 
 @media (max-width: 767.98px) {

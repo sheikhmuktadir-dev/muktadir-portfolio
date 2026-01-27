@@ -34,10 +34,12 @@
 .workCardText {
   text-transform: uppercase;
   font-weight: 500;
+  color: var(--white-text);
 }
 
 .workCardArrow {
   font-size: 1.6rem;
+  color: var(--white-text);
 }
 
 /* **********************  work card end*/

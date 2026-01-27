@@ -4,7 +4,6 @@
   display: block;
   position: relative;
   overflow: visible;
-  padding: var(--section-space);
   opacity: 1;
 }
 

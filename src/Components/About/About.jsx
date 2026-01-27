@@ -14,18 +14,10 @@ export default function About() {
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <img
-            src={aboutData?.image || image}
-            alt="about image"
-            className={Style.aboutImage}
-          />
-          <div className={Style.aboutTextArea}>
-            <h5 className={Style.aboutText}>
-              {aboutData?.text ||
-                "I’m Sheikh Muktadir, a Frontend & UI Developer with 3 years building responsive, scalable UIs focused on usability and performance."}
-            </h5>
-            <p className={Style.aboutPara}>{aboutData?.para}</p>
-          </div>
+          <h4 className={Style.aboutText}>
+            {aboutData?.text ||
+              "Frontend & UI Developer with 3 years of experience building clean, responsive, and high-quality web experiences."}
+          </h4>
         </motion.div>
       </div>
     </section>

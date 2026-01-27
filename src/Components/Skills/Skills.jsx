@@ -14,11 +14,10 @@ export default function Skills() {
 
   return (
     <section ref={sectionRef} className={Style.skillWrapper} id="skills">
-      <div className="container">
-        <div className={`headingMain ${Style.workText}`}>Skills</div>
-      </div>
       <div className={Style.skillSticky}>
         <div className={Style.skillInner}>
+          <div className={`headingMain ${Style.workText}`}>Skills</div>
+
           {skillsData?.map((skill, i) => (
             <SkillCard
               key={skill}
