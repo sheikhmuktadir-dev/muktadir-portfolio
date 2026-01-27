@@ -9,56 +9,110 @@
 .aboutContent {
   position: relative;
   width: 100%;
-  grid-column-gap: 3rem;
-  grid-row-gap: 3rem;
-  display: flex;
-  max-width: 1200px;
+  grid-column-gap: 8rem;
+  max-width: 100%;
   margin: 0 auto;
-  justify-content: center;
+  z-index: 20;
+  grid-template-rows: auto auto;
+  grid-template-columns: 0.5fr 1fr;
   width: 100%;
-  z-index: 30;
-  text-align: center;
-  align-items: center;
+  display: grid;
 }
 
+/* about image */
 .aboutImage {
   width: 300px;
-  object-fit: cover;
   flex: none;
-  object-position: top;
+  object-fit: cover;
   height: 300px;
+  position: relative;
+  flex-shrink: 0;
+  object-position: top;
   border-radius: 300px;
   filter: grayscale(100%) brightness(70%) contrast(100%);
+}
+
+/* about text area */
+.aboutTextArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
 }
 
 .aboutText {
   position: relative;
   z-index: 50;
-  font-weight: 500;
-  text-transform: uppercase;
   will-change: line-height, transform;
+}
+
+.aboutPara {
+  max-width: 700px;
+  text-indent: 3em;
+}
+
+.aboutNumFlex {
+  display: flex;
+  align-items: start;
+  gap: 100px;
+}
+
+.aboutNumber {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 40px;
 }
 
 @media (max-width: 767.98px) {
   .aboutContent {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .aboutImage {
+    width: 150px;
+    height: 150px;
+  }
+
+  .aboutPara {
     max-width: 100%;
+    text-indent: 0em;
+  }
+
+  .aboutNumFlex {
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    flex-direction: column;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023.98px) {
   .aboutContent {
-    max-width: 100%;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .aboutImage {
+    width: 250px;
+    height: 250px;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1279.98px) {
-  .aboutContent {
-    max-width: 850px;
+  .aboutImage {
+    width: 250px;
+    height: 250px;
   }
 }
 
 @media (min-width: 1280px) and (max-width: 1599.98px) {
-  .aboutContent {
-    max-width: 1100px;
+  .aboutImage {
+    width: 280px;
+    height: 280px;
   }
 }

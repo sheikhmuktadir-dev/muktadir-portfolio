@@ -27,13 +27,11 @@ export const heroData = {
     last: "Muktadir",
   },
   role: {
-    line1: "Frontend & UI",
-    line2: "Developer",
+    text: "— Frontend & UI developer building polished, brand-focused user interfaces.",
   },
-  status: "(Available For Work)",
   image: {
-    src: "/images/banner.webp",
-    alt: "Sheikh Muktadir",
+    src: "/images/circle.svg",
+    alt: "circle image",
   },
 };
 
@@ -61,27 +59,45 @@ export const socialLinks = [
 ];
 
 export const aboutData = {
-  text: "Frontend & UI Developer with 3 years of experience building clean, responsive, and high-quality web experiences.",
+  num: [
+    {
+      number: "3",
+      text: "Years of experience.",
+    },
+    {
+      number: "+20",
+      text: "Projects delivered.",
+    },
+  ],
+  image: "/images/banner.webp",
+  text: "Hey there!",
+  para: "I’m Sheikh Muktadir, a Frontend & UI Developer focused on building visually refined, functional web experiences. I turn ideas into clean interfaces where aesthetics and usability work together.",
 };
 
 export const worksCard = [
   {
     id: 1,
-    title: "Reimagining Reality",
-    image: "/images/work1.jpg",
-    link: "#",
+    title: "Zaps Travel",
+    image: "/images/zaps.webp",
+    link: "https://www.zapstravel.com/",
   },
   {
     id: 2,
-    title: "Reimagining",
-    image: "/images/work2.jpg",
-    link: "#",
+    title: "Zaps Travel",
+    image: "/images/zaps.webp",
+    link: "https://www.zapstravel.com/",
   },
   {
     id: 3,
     title: "Zaps Travel",
-    image: "/images/work03.webp",
+    image: "/images/zaps.webp",
     link: "https://www.zapstravel.com/",
+  },
+  {
+    id: 4,
+    title: "Earnon",
+    image: "/images/earn.webp",
+    link: "https://earnon.ai/",
   },
 ];
 

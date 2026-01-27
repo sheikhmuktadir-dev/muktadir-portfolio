@@ -16,7 +16,7 @@ export default function Skills() {
     <section ref={sectionRef} className={Style.skillWrapper} id="skills">
       <div className={Style.skillSticky}>
         <div className={Style.skillInner}>
-          <div className={`headingMain ${Style.workText}`}>Skills</div>
+          <h2 className="headingMain">Frontend Stack</h2>
 
           {skillsData?.map((skill, i) => (
             <SkillCard

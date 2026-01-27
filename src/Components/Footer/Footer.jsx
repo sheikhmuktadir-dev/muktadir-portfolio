@@ -9,9 +9,12 @@ export default function Footer() {
       <div className="container">
         <div className={Style.footerGrid}>
           <div className={Style.footerTopFlex}>
+            {/* let's talk button */}
             <a href="tel:+918093668843" className={Style.footerTalk}>
               Let's Talk
             </a>
+
+            {/* social links */}
             <div className={Style.socialFlex}>
               {socialLinks.map((item, index) => {
                 const Icon = item.icon;
@@ -29,15 +32,23 @@ export default function Footer() {
                 );
               })}
             </div>
+
+            {/* back to top */}
             <a href="#top" className={Style.footerbtnTop}>
               <FaCircleArrowUp />
               <span>Back To Top</span>
             </a>
           </div>
 
-          <div className={Style.footerHeading}>
-            <span>Let's</span>
-            <span>Connect</span>
+          {/* heading */}
+          <div className={Style.footerHeadingArea}>
+            <h5 className={Style.footerHeadingPara}>
+              Ready to bring your next idea to life?
+            </h5>
+            <h2 className={Style.footerHeading}>
+              <span>Let's</span>
+              <span>Connect</span>
+            </h2>
           </div>
         </div>
       </div>
@@ -45,9 +56,12 @@ export default function Footer() {
       <div className={Style.footerBottom}>
         <div className="container">
           <div className={Style.footerBottomFlex}>
+            {/* designer name */}
             <p className={Style.footerDesigner}>
               Designed by <span>Sheikh Muktadir</span>.
             </p>
+
+            {/* footer links */}
             <ul className={Style.footerList}>
               {footerNavLinks?.map((items, index) => {
                 return (

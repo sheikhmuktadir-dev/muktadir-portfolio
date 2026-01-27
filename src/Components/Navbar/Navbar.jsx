@@ -23,11 +23,14 @@ export default function Navbar() {
   return (
     <nav className={Style.navBar} id="top">
       <div className="container">
+        {/* nav logo area */}
         <div className={Style.navLogoArea}>
           <Link to="/" className={Style.navLogo}>
             <span>Sheikh-</span>
             <span>Muktadir.</span>
           </Link>
+
+          {/* nav toggle */}
           <button
             onClick={() => setNavToggle(true)}
             className={Style.navBarToggle}
@@ -39,6 +42,7 @@ export default function Navbar() {
         <div
           className={`${Style.navMenu} ${navToggle ? Style.navMenuShow : ""}`}
         >
+          {/* nav close toggle */}
           <button
             className={Style.navBarClose}
             onClick={() => setNavToggle(false)}

@@ -2,23 +2,17 @@
   position: relative;
   max-width: 100%;
   width: 100%;
-  background: var(--black-bg);
-  padding: var(--section-space);
 }
 
 .workCardGrid {
   position: relative;
   padding: var(--content-top-space);
   display: grid;
-  grid-template-columns: 6fr 3fr 3fr;
-  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
   max-width: 100%;
   width: 100%;
   z-index: 20;
-}
-
-.workText {
-  color: var(--white-text);
 }
 
 @media (max-width: 767.98px) {
@@ -29,6 +23,6 @@
 
 @media (min-width: 768px) and (max-width: 1023.98px) {
   .workCardGrid {
-    grid-template-columns: repeat(2, 6fr);
+    grid-template-columns: 1fr;
   }
 }

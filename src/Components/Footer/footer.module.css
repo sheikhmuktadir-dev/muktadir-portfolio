@@ -23,6 +23,7 @@
   justify-content: space-between;
 }
 
+/* social link */
 .footerSocial {
   position: relative;
   display: flex;
@@ -31,36 +32,6 @@
   align-items: center;
   gap: 10px;
   text-align: center;
-}
-
-.footerHeading {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  font-size: var(--title-fontsize);
-  line-height: 0.8em;
-  color: var(--black-color);
-  text-transform: uppercase;
-  align-items: center;
-}
-
-.footerTalk {
-  position: relative;
-  background: var(--white-bg);
-  height: 40px;
-  color: var(--black-color);
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex: none;
-  line-height: 1;
-  padding: 0 20px;
-  font-weight: 600;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  border-radius: 300px;
-  z-index: 20;
 }
 
 .socialFlex {
@@ -89,6 +60,51 @@
   transition: all 0.2s ease;
 }
 
+/* footer heading */
+
+.footerHeadingArea {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.footerHeadingPara {
+  max-width: 600px;
+}
+
+.footerHeading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+/* let's talk btn */
+.footerTalk {
+  position: relative;
+  background: var(--white-bg);
+  height: 40px;
+  color: var(--black-color);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: none;
+  line-height: 1;
+  padding: 0 20px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-radius: 300px;
+  z-index: 20;
+}
+
+/* back to top */
 .footerbtnTop {
   position: relative;
   font-weight: 600;
@@ -139,6 +155,7 @@
   position: relative;
 }
 
+/* footer links */
 .footerLink {
   position: relative;
   font-weight: 600;

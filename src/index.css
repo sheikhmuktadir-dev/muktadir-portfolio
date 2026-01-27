@@ -1,26 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
+@font-face {
+  font-family: "Mazius Display";
+  src: url("./assets/fonts/MaziusDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mazius Display";
+  src: url("./assets/fonts/MaziusDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mazius Display";
+  src: url("./assets/fonts/MaziusDisplay-ExtraItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mazius Display";
+  src: url("./assets/fonts/MaziusDisplay-ExtraItalicBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   /* btn */
-  --btn-size: 40px;
+  --btn-size: 50px;
 
   /* space */
-  --section-space: 300px 0;
-  --section-space-small: 150px 0;
-  --content-top-space: 150px 0 0;
+  --section-space: 200px 0;
+  --section-space-small: 100px 0;
+  --content-top-space: 100px 0 0;
 
   /* bg */
-  --black-bg: #000;
+  --black-bg: #0f0f0f;
   --white-bg: #eee;
 
   /* color */
-  --black-text: #000;
+  --black-text: #0f0f0f;
   --white-text: #eee;
-
-  /* font size */
-  --logo-fontsize: 1.4rem;
-  --navlink-fontsize: 1.4rem;
-  --title-fontsize: 18rem;
 }
 
 *,
@@ -40,9 +67,9 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  line-height: 1.4em;
+  line-height: 1em;
   background: var(--white-bg);
   font-family: "Geist Mono", monospace;
   color: var(--black-text);
@@ -102,34 +129,43 @@ button:focus {
   outline: none;
 }
 h1 {
-  font-size: 12rem;
+  font-size: 18rem;
+  line-height: 0.9em;
   font-weight: 500;
-  line-height: 1em;
+  font-family: "Mazius Display", serif;
+  font-style: italic;
+  color: var(--black-text);
 }
 h2 {
   font-size: 10rem;
   font-weight: 500;
-  line-height: 1em;
+  line-height: 0.9em;
+  font-family: "Mazius Display", serif;
+  font-style: italic;
+  color: var(--black-text);
 }
 h3 {
   font-size: 8rem;
   font-weight: 500;
   line-height: 1em;
+  font-family: "Mazius Display", serif;
+  font-style: italic;
+  color: var(--black-text);
 }
 h4 {
-  font-size: 5.5rem;
+  font-size: 6rem;
   font-weight: 500;
-  line-height: 1.1em;
+  line-height: 1em;
 }
 h5 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 400;
-  line-height: 1.1em;
+  line-height: 1em;
 }
 h6 {
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.1em;
+  line-height: 1em;
 }
 
 /* line area*/
@@ -153,21 +189,15 @@ h6 {
 }
 
 .headingMain {
-  font-size: var(--title-fontsize);
   position: relative;
-  text-transform: uppercase;
-  line-height: 0.8em;
-  font-weight: 400;
   z-index: 30;
 }
 
 @media (max-width: 767.98px) {
   :root {
-    --title-fontsize: 4.5rem;
-
     /* space */
-    --section-space: 100px 0;
-    --section-space-small: 70px 0;
+    --section-space: 140px 0;
+    --section-space-small: 80px 0;
     --content-top-space: 40px 0 0;
   }
 
@@ -197,12 +227,10 @@ h6 {
 
 @media (min-width: 768px) and (max-width: 1023.98px) {
   :root {
-    --title-fontsize: 9rem;
-
     /* space */
     --section-space: 140px 0;
     --section-space-small: 100px 0;
-    --content-top-space: 80px 0 0;
+    --content-top-space: 70px 0 0;
   }
 
   h1 {
@@ -231,12 +259,10 @@ h6 {
 
 @media (min-width: 1024px) and (max-width: 1279.98px) {
   :root {
-    --title-fontsize: 12rem;
-
     /* space */
     --section-space: 200px 0;
     --section-space-small: 100px 0;
-    --content-top-space: 70px 0 0;
+    --content-top-space: 80px 0 0;
   }
 
   h1 {
@@ -261,19 +287,17 @@ h6 {
 
 @media (min-width: 1280px) and (max-width: 1599.98px) {
   :root {
-    --title-fontsize: 14rem;
-
     /* space */
-    --section-space: 250px 0;
-    --section-space-small: 120px 0;
-    --content-top-space: 100px 0 0;
+    --section-space: 200px 0;
+    --section-space-small: 100px 0;
+    --content-top-space: 80px 0 0;
   }
 
   h1 {
     font-size: 13rem;
   }
   h2 {
-    font-size: 11rem;
+    font-size: 10rem;
   }
   h3 {
     font-size: 8rem;
