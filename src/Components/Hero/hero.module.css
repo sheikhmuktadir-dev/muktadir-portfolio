@@ -40,7 +40,18 @@
   object-fit: cover;
   object-position: center;
   z-index: 30;
+  animation: circleRotate 20s linear infinite;
   inset: 0% auto auto 0%;
+}
+
+@keyframes circleRotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .heroSocialFlex {
@@ -85,7 +96,6 @@
 /* hero sub heading */
 .heroSubheading {
   position: relative;
-  line-height: 1.4em;
   max-width: 500px;
   font-size: 1rem;
   text-transform: uppercase;
