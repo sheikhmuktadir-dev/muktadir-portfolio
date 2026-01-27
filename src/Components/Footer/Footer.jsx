@@ -12,16 +12,19 @@ export default function Footer() {
             <a href="tel:+918093668843" className={Style.footerTalk}>
               Let's Talk
             </a>
-            <div className={Style.footerSocial}>
-              {socialLinks?.map((list, index) => {
+            <div className={Style.socialFlex}>
+              {socialLinks.map((item, index) => {
+                const Icon = item.icon;
                 return (
                   <a
-                    href={list.url}
+                    key={index}
+                    href={item.url}
+                    className={Style.socialBtn}
+                    aria-label={item.label}
                     target="_blank"
-                    key={list.label || index}
-                    className={Style.footerSocialLink}
+                    rel="noopener noreferrer"
                   >
-                    {list.label}
+                    <Icon />
                   </a>
                 );
               })}
@@ -36,7 +39,11 @@ export default function Footer() {
             <span>Let's</span>
             <span>Connect</span>
           </div>
+        </div>
+      </div>
 
+      <div className={Style.footerBottom}>
+        <div className="container">
           <div className={Style.footerBottomFlex}>
             <p className={Style.footerDesigner}>
               Designed by <span>Sheikh Muktadir</span>.

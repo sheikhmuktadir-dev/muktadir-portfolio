@@ -87,31 +87,33 @@ export default function Hero() {
 
           {/* Bottom Section */}
           <div className={Style.heroBottomFlex}>
-            <div className={Style.socialFlex}>
-              {socialLinks.map((item, index) => {
-                const Icon = item.icon;
-                return (
-                  <a
-                    key={index}
-                    href={item.url}
-                    className={Style.socialBtn}
-                    aria-label={item.label}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Icon />
-                  </a>
-                );
-              })}
+            <div className={Style.heroBottomStart}>
+              <h6 className={`${Style.heroSubheading} ${Style.heroBottomText}`}>
+                <span>{heroData?.role?.line1 || "Frontend & UI"}</span>
+                <span>{heroData?.role?.line2 || "Developer"}</span>
+              </h6>
+
+              <div className={Style.socialFlex}>
+                {socialLinks.map((item, index) => {
+                  const Icon = item.icon;
+                  return (
+                    <a
+                      key={index}
+                      href={item.url}
+                      className={Style.socialBtn}
+                      aria-label={item.label}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Icon />
+                    </a>
+                  );
+                })}
+              </div>
             </div>
 
-            <h6 className={`${Style.heroSubheading} ${Style.heroBottomText}`}>
-              <span>{heroData?.role?.line1 || "Frontend & UI"}</span>
-              <span>{heroData?.role?.line2 || "Developer"}</span>
-            </h6>
-
             <div className={Style.heroBottomEnd}>
-              <h6 className={Style.heroBottomText}>
+              <h6 className={`${Style.heroBottomText} ${Style.heroParaText}`}>
                 {heroData?.status || "(Available)"}
               </h6>
             </div>

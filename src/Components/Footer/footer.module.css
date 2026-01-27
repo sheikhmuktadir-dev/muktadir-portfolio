@@ -1,9 +1,9 @@
 .footerMain {
-  background: #f2f2f2;
+  background: #dadada;
   max-width: 100%;
   width: 100%;
-  padding: 50px 0;
   position: relative;
+  border-radius: 60px 60px 0 0;
 }
 
 .footerGrid {
@@ -11,8 +11,9 @@
   grid-template-rows: auto auto auto;
   grid-template-columns: 1fr;
   justify-content: space-between;
-  min-height: 100vh;
   display: flex;
+  gap: 100px;
+  padding: var(--section-space-small);
 }
 
 .footerTopFlex {
@@ -62,12 +63,30 @@
   z-index: 20;
 }
 
-.footerSocialLink {
+.socialFlex {
   position: relative;
-  font-weight: 600;
-  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.socialBtn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: none;
+  line-height: 1;
+  border-radius: 300px;
+  width: var(--btn-size);
   font-size: 1.2rem;
+  color: var(--white-text);
   z-index: 20;
+  height: var(--btn-size);
+  background: var(--black-bg);
+  transition: all 0.2s ease;
 }
 
 .footerbtnTop {
@@ -82,17 +101,27 @@
   gap: 10px;
 }
 
-.footerBottomFlex {
+.footerBottom {
   position: relative;
+  background: var(--black-bg);
+  border-radius: 60px 60px 0 0;
+  padding: 40px 0;
+  width: 100%;
+}
+
+.footerBottomFlex {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  width: 100%;
 }
 
 .footerDesigner {
   position: relative;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  color: var(--white-text);
 }
 
 .footerDesigner span {
@@ -113,9 +142,9 @@
 .footerLink {
   position: relative;
   font-weight: 600;
-  color: var(--black-color);
   z-index: 20;
-  font-size: 1.2rem;
+  color: var(--white-text);
+  font-size: 1rem;
   text-decoration: underline;
 }
 
@@ -127,24 +156,20 @@
 
   .footerGrid {
     min-height: auto;
-    gap: 60px;
-  }
-
-  .footerHeading {
-    font-size: 5rem;
+    gap: 50px;
   }
 
   .footerBottomFlex {
     flex-direction: column-reverse;
     gap: 20px;
   }
+
+  .footerGrid {
+    gap: 50px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023.98px) {
-  .footerHeading {
-    font-size: 10rem;
-  }
-
   .footerGrid {
     min-height: auto;
     gap: 100px;

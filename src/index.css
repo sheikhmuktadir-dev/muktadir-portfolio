@@ -6,15 +6,16 @@
 
   /* space */
   --section-space: 300px 0;
+  --section-space-small: 150px 0;
   --content-top-space: 150px 0 0;
 
   /* bg */
-  --black-bg: #000000;
-  --white-bg: #ffffff;
+  --black-bg: #0f0f0f;
+  --white-bg: #eee;
 
   /* color */
-  --black-text: #000000;
-  --white-text: #ffffff;
+  --black-text: #0f0f0f;
+  --white-text: #fff;
 
   /* font size */
   --logo-fontsize: 1.4rem;
@@ -116,12 +117,12 @@ h3 {
   line-height: 1em;
 }
 h4 {
-  font-size: 5.5rem;
+  font-size: 5rem;
   font-weight: 500;
   line-height: 1.1em;
 }
 h5 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 400;
   line-height: 1.1em;
 }
@@ -166,7 +167,8 @@ h6 {
 
     /* space */
     --section-space: 100px 0;
-    --content-top-space: 60px 0 0;
+    --section-space-small: 70px 0;
+    --content-top-space: 40px 0 0;
   }
 
   .lines-pattern {
@@ -199,6 +201,7 @@ h6 {
 
     /* space */
     --section-space: 140px 0;
+    --section-space-small: 100px 0;
     --content-top-space: 80px 0 0;
   }
 
@@ -232,7 +235,8 @@ h6 {
 
     /* space */
     --section-space: 200px 0;
-    --content-top-space: 100px 0 0;
+    --section-space-small: 100px 0;
+    --content-top-space: 70px 0 0;
   }
 
   h1 {
@@ -261,7 +265,8 @@ h6 {
 
     /* space */
     --section-space: 250px 0;
-    --content-top-space: 120px 0 0;
+    --section-space-small: 120px 0;
+    --content-top-space: 100px 0 0;
   }
 
   h1 {

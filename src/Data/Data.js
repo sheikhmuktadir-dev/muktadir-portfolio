@@ -30,7 +30,7 @@ export const heroData = {
     line1: "Frontend & UI",
     line2: "Developer",
   },
-  status: "(Available)",
+  status: "(Available For Work)",
   image: {
     src: "/images/banner.webp",
     alt: "Sheikh Muktadir",
@@ -61,7 +61,9 @@ export const socialLinks = [
 ];
 
 export const aboutData = {
-  text: "Frontend & UI Developer with 3 years of experience building clean, responsive, and high-quality web experiences.",
+  text: "I’m Sheikh Muktadir, a Frontend & UI Developer with 3 years building responsive, scalable UIs focused on usability and performance.",
+  para: "I specialize in building modern, responsive user interfaces using scalable frontend architectures. My focus is on usability, performance, and writing clean, maintainable code. Every product I build is designed to feel intuitive, fast, and reliable.",
+  image: "/images/banner.webp",
 };
 
 export const worksCard = [
@@ -79,9 +81,9 @@ export const worksCard = [
   },
   {
     id: 3,
-    title: "Almac Estate",
+    title: "Zaps Travel",
     image: "/images/work03.webp",
-    link: "https://almac.vercel.app/",
+    link: "https://www.zapstravel.com/",
   },
 ];
 

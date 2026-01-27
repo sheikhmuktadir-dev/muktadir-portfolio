@@ -8,14 +8,38 @@
 
 .aboutContent {
   position: relative;
-  max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+  display: grid;
+  max-width: 1600px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 0.5fr 1fr;
+  width: 100%;
   z-index: 30;
+  align-items: start;
+}
+
+.aboutTextArea {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+}
+
+.aboutPara {
+  position: relative;
+  max-width: 700px;
+}
+
+.aboutImage {
+  width: 300px;
+  object-fit: cover;
+  flex: none;
+  object-position: top;
+  height: 300px;
+  border-radius: 300px;
+  filter: grayscale(100%) brightness(70%) contrast(100%);
 }
 
 .aboutText {
@@ -26,9 +50,35 @@
   will-change: line-height, transform;
 }
 
+@media (max-width: 767.98px) {
+  .aboutContent {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .aboutPara {
+    max-width: 100%;
+  }
+
+  .aboutImage {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .aboutContent {
+    max-width: 100%;
+  }
+
+  .aboutPara {
+    max-width: 100%;
+  }
+}
+
 @media (min-width: 1024px) and (max-width: 1279.98px) {
   .aboutContent {
-    max-width: 900px;
+    max-width: 100%;
   }
 }
 

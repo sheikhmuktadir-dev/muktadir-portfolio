@@ -11,8 +11,8 @@
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: start;
+  text-align: start;
   flex-direction: column;
   gap: 20px;
 }
@@ -21,10 +21,11 @@
   position: relative;
   font-size: var(--title-fontsize);
   line-height: 0.8em;
-  font-weight: 400;
+  font-weight: 500;
   z-index: 50;
   color: var(--white-text);
   mix-blend-mode: difference;
+  padding-left: 100px;
   text-transform: uppercase;
 }
 
@@ -60,19 +61,25 @@
   display: grid;
   width: 100%;
   align-items: end;
-  grid-template-columns: repeat(3, 4fr);
+  grid-template-columns: repeat(2, 6fr);
 }
 
 .socialFlex {
   position: relative;
   display: flex;
+  justify-content: start;
   align-items: center;
   gap: 5px;
 }
 
+.heroBottomStart {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 15px;
+}
+
 .socialBtn {
   position: relative;
-  width: var(--btn-size);
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -80,11 +87,12 @@
   flex: none;
   line-height: 1;
   border-radius: 300px;
+  width: var(--btn-size);
   font-size: 1.2rem;
-  height: var(--btn-size);
-  z-index: 20;
-  background: var(--black-bg);
   color: var(--white-text);
+  z-index: 20;
+  height: var(--btn-size);
+  background: var(--black-bg);
   transition: all 0.2s ease;
 }
 
@@ -93,9 +101,10 @@
 }
 
 .heroSubheading {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   line-height: 1em;
+  display: flex;
+  gap: 15px;
   text-transform: uppercase;
 }
 
@@ -107,11 +116,28 @@
   font-weight: 600;
 }
 
+.heroParaText {
+  max-width: 350px;
+}
+
 @media (max-width: 767.98px) {
   .heroImageArea {
     top: 45%;
     transform: rotate(15deg) translate(-64%, -55%);
     max-width: 200px;
+  }
+
+  .heroTitle {
+    padding-left: 0;
+  }
+
+  .heroInner {
+    align-items: center;
+    text-align: center;
+  }
+
+  .heroSubheading {
+    justify-content: center;
   }
 
   .heroBottomFlex {
@@ -137,6 +163,10 @@
     transform: rotate(15deg) translate(-64%, -55%);
     max-width: 300px;
   }
+
+  .heroTitle {
+    padding-left: 50px;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1279.98px) {
@@ -147,11 +177,19 @@
   .heroImageArea {
     padding-top: 40%;
   }
+
+  .heroTitle {
+    padding-left: 60px;
+  }
 }
 
 @media (min-width: 1280px) and (max-width: 1599.98px) {
   .heroImageArea {
     max-width: 400px;
     padding-top: 40%;
+  }
+
+  .heroTitle {
+    padding-left: 80px;
   }
 }

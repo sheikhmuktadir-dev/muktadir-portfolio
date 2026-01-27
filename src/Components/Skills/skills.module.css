@@ -4,6 +4,7 @@
   display: block;
   position: relative;
   overflow: visible;
+  padding: var(--section-space);
   opacity: 1;
 }
 
@@ -27,6 +28,7 @@
   perspective: 1400px;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center;
   height: 100vh;
   z-index: 30;

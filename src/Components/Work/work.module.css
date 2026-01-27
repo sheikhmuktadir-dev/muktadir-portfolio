@@ -1,7 +1,5 @@
 .workSection {
   position: relative;
-  padding: var(--section-space);
-  background: var(--black-bg);
   max-width: 100%;
   width: 100%;
 }
@@ -15,10 +13,6 @@
   max-width: 100%;
   width: 100%;
   z-index: 20;
-}
-
-.workText {
-  color: var(--white-text);
 }
 
 @media (max-width: 767.98px) {
