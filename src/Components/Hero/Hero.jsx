@@ -33,11 +33,11 @@ export default function Hero() {
                 const Icon = item.icon;
                 return (
                   <a
-                    key={index}
+                    key={item.label || index}
                     href={item.url}
                     className={Style.socialBtn}
                     aria-label={item.label}
-                    target="_blank"
+                    target={item.label === "Email" ? "" : "_blank"}
                     rel="noopener noreferrer"
                   >
                     <Icon />

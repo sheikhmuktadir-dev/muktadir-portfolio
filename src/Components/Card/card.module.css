@@ -25,7 +25,7 @@
 }
 
 .workCard:hover .workCardImage {
-  transform: scale(1.09, 1.09);
+  transform: scale(1.02, 1.02);
 }
 
 /* work card text */

@@ -27,7 +27,7 @@ export const heroData = {
     last: "Muktadir",
   },
   role: {
-    text: "— Frontend & UI developer building polished, brand-focused user interfaces.",
+    text: "— React specialist building pixel-perfect, high-performance web interfaces.",
   },
   image: {
     src: "/images/circle.svg",
@@ -43,7 +43,7 @@ export const socialLinks = [
   },
   {
     icon: FaGithub,
-    url: "https://github.com/sheikhmuktadir-dev?tab=repositories",
+    url: "https://github.com/sheikhmuktadir-dev",
     label: "GitHub",
   },
   {
@@ -61,43 +61,43 @@ export const socialLinks = [
 export const aboutData = {
   num: [
     {
-      number: "3",
+      number: "+3",
       text: "Years of experience.",
     },
     {
       number: "+20",
-      text: "Projects delivered.",
+      text: "Projects Completed.",
     },
   ],
   image: "/images/banner.webp",
   text: "Hey there!",
-  para: "I’m Sheikh Muktadir, a Frontend & UI Developer focused on building visually refined, functional web experiences. I turn ideas into clean interfaces where aesthetics and usability work together.",
+  para: "I’m Sheikh Muktadir, a Frontend Developer building pixel-perfect, high-performance web interfaces. I transform complex designs into clean, scalable React code focused on speed and usability.",
 };
 
 export const worksCard = [
   {
     id: 1,
     title: "Zaps Travel",
-    image: "/images/zaps.webp",
+    image: "/images/zap.webp",
     link: "https://www.zapstravel.com/",
   },
   {
     id: 2,
-    title: "Zaps Travel",
-    image: "/images/zaps.webp",
-    link: "https://www.zapstravel.com/",
+    title: "Cortex",
+    image: "/images/cortex.webp",
+    link: "https://cortexdashboard.vercel.app/",
   },
   {
     id: 3,
-    title: "Zaps Travel",
-    image: "/images/zaps.webp",
-    link: "https://www.zapstravel.com/",
+    title: "Earnon",
+    image: "/images/earnon.webp",
+    link: "https://earnon.ai/",
   },
   {
     id: 4,
-    title: "Earnon",
-    image: "/images/earn.webp",
-    link: "https://earnon.ai/",
+    title: "Almac",
+    image: "/images/almac.webp",
+    link: "https://almac.vercel.app/",
   },
 ];
 
