@@ -16,14 +16,12 @@ export default function Skills() {
     <section ref={sectionRef} className={Style.skillWrapper} id="skills">
       <div className={Style.skillSticky}>
         <div className={Style.skillInner}>
-          <h2 className="headingMain">Frontend Stack</h2>
-
-          {skillsData?.map((skill, i) => (
+          {skillsData.map((skill, i) => (
             <SkillCard
               key={skill}
               text={skill}
               index={i}
-              total={skillsData?.length}
+              total={skillsData.length}
               scrollYProgress={scrollYProgress}
             />
           ))}

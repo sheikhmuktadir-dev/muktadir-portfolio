@@ -1,34 +1,24 @@
 .skillWrapper {
   min-height: 500vh;
-  pointer-events: auto;
-  display: block;
   position: relative;
-  overflow: visible;
-  opacity: 1;
 }
 
 .skillSticky {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 50;
+  height: 100vh;
   overflow: hidden;
 }
 
-.skillSection {
-  max-width: 100%;
-  width: 100%;
-  min-height: auto;
-}
-
 .skillInner {
-  max-width: 100%;
+  position: relative;
   width: 100%;
-  display: flex;
-  perspective: 1400px;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
   height: 100vh;
-  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  perspective: 1600px;
+  transform-style: preserve-3d;
 }
