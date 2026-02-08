@@ -89,15 +89,15 @@ export const worksCard = [
   },
   {
     id: 3,
-    title: "Earnon",
-    image: "/images/earnon.webp",
-    link: "https://earnon.ai/",
-  },
-  {
-    id: 4,
     title: "Almac",
     image: "/images/almac.webp",
     link: "https://almac.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "Earnon",
+    image: "/images/earnon.webp",
+    link: "https://earnon.ai/",
   },
 ];
 
