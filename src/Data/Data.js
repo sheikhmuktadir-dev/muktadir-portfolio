@@ -83,9 +83,9 @@ export const worksCard = [
   },
   {
     id: 2,
-    title: "Cortex",
-    image: "/images/cortex.webp",
-    link: "https://cortexdashboard.vercel.app/",
+    title: "Workzon Dashboard",
+    image: "/images/workzon.webp",
+    link: "https://workzon.vercel.app/",
   },
   {
     id: 3,
@@ -102,14 +102,14 @@ export const worksCard = [
 ];
 
 export const skillsData = [
-  "HTML",
-  "CSS",
   "React.js",
-  "Tailwind CSS",
+  "CSS",
+  "HTML",
+  "Responsive UI",
   "Bootstrap",
   "JavaScript",
   "Git/Github",
-  "Responsive UI",
+  "Tailwind CSS",
 ];
 
 export const footerNavLinks = [
