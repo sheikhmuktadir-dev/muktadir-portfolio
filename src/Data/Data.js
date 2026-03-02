@@ -103,12 +103,11 @@ export const worksCard = [
 
 export const skillsData = [
   "React.js",
-  "CSS",
-  "HTML",
+  "Git/Github",
   "Responsive UI",
   "Bootstrap",
+  "HTML/CSS",
   "JavaScript",
-  "Git/Github",
   "Tailwind CSS",
 ];
 
