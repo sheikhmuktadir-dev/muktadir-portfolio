@@ -4,6 +4,8 @@
   width: 100%;
   height: 100%;
   z-index: 50;
+  border-radius: 15px;
+  min-height: 650px;
   transition: all 0.3s ease;
 }
 
@@ -11,7 +13,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 15px;
   overflow: hidden;
 }
 
@@ -20,7 +22,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 15px;
   transition: all 0.3s ease;
 }
 
@@ -36,7 +38,7 @@
   z-index: 100;
   width: 100%;
   align-items: end;
-  padding: 40px;
+  padding: 20px;
 }
 
 .workCardText {
@@ -95,6 +97,10 @@
     padding: 5px 10px;
     font-size: 1rem;
   }
+
+  .workCard {
+    min-height: 320px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023.98px) {
@@ -105,7 +111,11 @@
   }
 
   .workCardBottomFlex {
-    padding: 30px;
+    padding: 20px;
+  }
+
+  .workCard {
+    min-height: 600px;
   }
 }
 
@@ -113,13 +123,22 @@
   .skillCard {
     height: 380px;
     max-width: 380px;
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+
+  .workCard {
+    min-height: 500px;
   }
 }
 
 @media (min-width: 1280px) and (max-width: 1599.98px) {
   .skillCard {
-    height: 400px;
-    max-width: 400px;
+    height: 440px;
+    font-size: 2.7rem;
+    max-width: 440px;
+  }
+
+  .workCard {
+    min-height: 500px;
   }
 }

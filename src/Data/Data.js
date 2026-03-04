@@ -27,7 +27,7 @@ export const heroData = {
     last: "Muktadir",
   },
   role: {
-    text: "— React specialist building pixel-perfect, high-performance web interfaces.",
+    text: "— React Specialist: Translating ambitious designs into high-performance digital experiences.",
   },
   image: {
     src: "/images/circle.svg",
@@ -62,16 +62,16 @@ export const aboutData = {
   num: [
     {
       number: "+3",
-      text: "Years of experience.",
+      text: "Years Professional Tenure",
     },
     {
       number: "+20",
-      text: "Projects Completed.",
+      text: "Production Releases Shipped",
     },
   ],
   image: "/images/banner.webp",
   text: "Hey there!",
-  para: "I’m Sheikh Muktadir, a Frontend Developer building pixel-perfect, high-performance web interfaces. I transform complex designs into clean, scalable React code focused on speed and usability.",
+  para: "I’m Sheikh Muktadir. I bridge the gap between ambitious design and high-performance engineering. I craft clean, scalable React architectures that ensure web interfaces remain pixel-perfect, accessible, and lightning-fast as they grow.",
 };
 
 export const worksCard = [
@@ -83,7 +83,7 @@ export const worksCard = [
   },
   {
     id: 2,
-    title: "Workzon Dashboard",
+    title: "Workzon",
     image: "/images/workzon.webp",
     link: "https://workzon.vercel.app/",
   },
@@ -102,13 +102,13 @@ export const worksCard = [
 ];
 
 export const skillsData = [
-  "React.js",
+  "React.Js",
   "Git/Github",
-  "Responsive UI",
-  "Bootstrap",
   "HTML/CSS",
-  "JavaScript",
+  "Bootstrap",
   "Tailwind CSS",
+  "JavaScript (ES6+)",
+  "Redux Toolkit",
 ];
 
 export const footerNavLinks = [

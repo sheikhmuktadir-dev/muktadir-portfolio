@@ -29,6 +29,7 @@
 
 .heroTitle span:last-child {
   text-indent: 0.5em;
+  color: #8b8b8b;
 }
 
 /* hero image */
@@ -183,7 +184,7 @@
   }
 
   .heroSocialFlex {
-    right: 40px;
+    right: 20px;
   }
 
   .heroSocialFlex {
