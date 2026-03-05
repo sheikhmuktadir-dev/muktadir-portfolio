@@ -15,8 +15,15 @@ export default function Skills() {
   return (
     <section ref={sectionRef} className={Style.skillWrapper} id="skills">
       <div className="container">
-        <h2 className="headingMain">My Expertise</h2>
+        <div className="headingMainBox">
+          <h2 className="headingMain">My Expertise</h2>
+          <p className="headingMainPara">
+            Technologies and tools I use to build modern, scalable, and
+            high-performance web applications.
+          </p>
+        </div>
       </div>
+
       <div className={Style.skillSticky}>
         <div className={Style.skillInner}>
           {skillsData.map((skill, i) => (

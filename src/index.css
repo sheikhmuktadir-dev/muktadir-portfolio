@@ -38,13 +38,13 @@
 
 :root {
   /* btn */
-  --btn-size: 50px;
+  --btn-size: 45px;
 
   /* space */
   --section-space: 200px 0;
   --section-space-top: 200px 0 0;
   --section-space-small: 100px 0;
-  --content-top-space: 100px 0 0;
+  --content-top-space: 80px 0 0;
 
   /* bg */
   --black-bg: #0f0f0f;
@@ -72,7 +72,7 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.4em;
   background: var(--white-bg);
@@ -168,12 +168,12 @@ h4 {
 h5 {
   font-size: 3rem;
   font-weight: 400;
-  line-height: 1em;
+  line-height: 1.2em;
 }
 h6 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  line-height: 1em;
+  line-height: 1.2em;
 }
 
 /* line area*/
@@ -198,7 +198,22 @@ h6 {
 
 .headingMain {
   position: relative;
+  max-width: 700px;
   z-index: 30;
+}
+
+.headingMainBox {
+  position: relative;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: end;
+}
+
+.headingMainPara {
+  position: relative;
+  max-width: 350px;
+  justify-self: center;
 }
 
 @media (max-width: 767.98px) {
@@ -231,6 +246,10 @@ h6 {
   }
   h6 {
     font-size: 1rem;
+  }
+
+  .headingMainBox {
+    grid-template-columns: 1fr;
   }
 }
 

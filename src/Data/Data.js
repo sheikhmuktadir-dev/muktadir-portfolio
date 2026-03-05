@@ -27,7 +27,7 @@ export const heroData = {
     last: "Muktadir",
   },
   role: {
-    text: "— React Specialist: Translating ambitious designs into high-performance digital experiences.",
+    text: "— Frontend Developer focused on performance and clean UI.",
   },
   image: {
     src: "/images/circle.svg",
@@ -62,11 +62,11 @@ export const aboutData = {
   num: [
     {
       number: "+3",
-      text: "Years Professional Tenure",
+      text: "Years Experience",
     },
     {
       number: "+20",
-      text: "Production Releases Shipped",
+      text: "Projects Delivered",
     },
   ],
   image: "/images/banner.webp",

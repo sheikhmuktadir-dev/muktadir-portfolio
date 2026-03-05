@@ -6,7 +6,13 @@ export default function Work() {
   return (
     <section className={Style.workSection} id="works">
       <div className="container">
-        <h2 className="headingMain">Selected works</h2>
+        <div className="headingMainBox">
+          <h2 className="headingMain">Selected works</h2>
+          <p className="headingMainPara">
+            A selection of projects showcasing my focus on clean design,
+            scalable code, and high-performance web experiences.
+          </p>
+        </div>
 
         <div className={Style.workCardGrid}>
           {worksCard?.map((item, i) => {

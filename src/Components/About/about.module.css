@@ -9,7 +9,7 @@
 .aboutContent {
   position: relative;
   width: 100%;
-  grid-column-gap: 8rem;
+  grid-column-gap: 4rem;
   max-width: 100%;
   margin: 0 auto;
   z-index: 20;
@@ -37,7 +37,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 40px;
+  gap: 60px;
   max-width: 100%;
   width: 100%;
   position: relative;
@@ -50,14 +50,13 @@
 }
 
 .aboutPara {
-  max-width: 700px;
-  text-indent: 3em;
+  max-width: 600px;
 }
 
 .aboutNumFlex {
   display: flex;
   align-items: start;
-  gap: 100px;
+  gap: 180px;
 }
 
 .aboutNumber {
@@ -80,12 +79,11 @@
 
   .aboutPara {
     max-width: 100%;
-    text-indent: 0em;
   }
 
   .aboutNumFlex {
     display: flex;
-    gap: 10px;
+    gap: 40px;
     align-items: start;
     flex-direction: column;
   }
@@ -101,6 +99,10 @@
     width: 250px;
     height: 250px;
   }
+
+  .aboutNumFlex {
+    gap: 80px;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1279.98px) {
@@ -108,11 +110,19 @@
     width: 250px;
     height: 250px;
   }
+
+  .aboutNumFlex {
+    gap: 140px;
+  }
 }
 
 @media (min-width: 1280px) and (max-width: 1599.98px) {
   .aboutImage {
     width: 280px;
     height: 280px;
+  }
+
+  .aboutNumFlex {
+    gap: 160px;
   }
 }

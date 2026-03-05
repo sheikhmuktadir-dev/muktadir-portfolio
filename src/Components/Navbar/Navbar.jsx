@@ -24,56 +24,58 @@ export default function Navbar() {
     <nav className={Style.navBar} id="top">
       <div className="container">
         {/* nav logo area */}
-        <div className={Style.navLogoArea}>
-          <Link to="/" className={Style.navLogo}>
-            <span>Sheikh-</span>
-            <span>Muktadir.</span>
-          </Link>
+        <div className={Style.navBarInner}>
+          <div className={Style.navLogoArea}>
+            <Link to="/" className={Style.navLogo}>
+              <span>Sheikh-</span>
+              <span>Muktadir.</span>
+            </Link>
 
-          {/* nav toggle */}
-          <button
-            onClick={() => setNavToggle(true)}
-            className={Style.navBarToggle}
-          >
-            <BsListNested />
-          </button>
-        </div>
+            {/* nav toggle */}
+            <button
+              onClick={() => setNavToggle(true)}
+              className={Style.navBarToggle}
+            >
+              <BsListNested />
+            </button>
+          </div>
 
-        <div
-          className={`${Style.navMenu} ${navToggle ? Style.navMenuShow : ""}`}
-        >
-          {/* nav close toggle */}
-          <button
-            className={Style.navBarClose}
-            onClick={() => setNavToggle(false)}
+          <div
+            className={`${Style.navMenu} ${navToggle ? Style.navMenuShow : ""}`}
           >
-            <IoMdClose />
-          </button>
-          <ul className={Style.navList}>
-            {navLinks?.map((list, index) => {
-              return (
-                <li className={Style.navItem} key={index || list.label}>
-                  {list.index ? (
-                    <Link
-                      to={list.path}
-                      onClick={() => setNavToggle(false)}
-                      className={Style.navLink}
-                    >
-                      {list.label}
-                    </Link>
-                  ) : (
-                    <a
-                      href={list.path}
-                      onClick={() => setNavToggle(false)}
-                      className={Style.navLink}
-                    >
-                      {list.label}
-                    </a>
-                  )}
-                </li>
-              );
-            })}
-          </ul>
+            {/* nav close toggle */}
+            <button
+              className={Style.navBarClose}
+              onClick={() => setNavToggle(false)}
+            >
+              <IoMdClose />
+            </button>
+            <ul className={Style.navList}>
+              {navLinks?.map((list, index) => {
+                return (
+                  <li className={Style.navItem} key={index || list.label}>
+                    {list.index ? (
+                      <Link
+                        to={list.path}
+                        onClick={() => setNavToggle(false)}
+                        className={Style.navLink}
+                      >
+                        {list.label}
+                      </Link>
+                    ) : (
+                      <a
+                        href={list.path}
+                        onClick={() => setNavToggle(false)}
+                        className={Style.navLink}
+                      >
+                        {list.label}
+                      </a>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
