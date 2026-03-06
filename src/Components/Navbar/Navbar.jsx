@@ -27,7 +27,6 @@ export default function Navbar() {
         <div className={Style.navBarInner}>
           <div className={Style.navLogoArea}>
             <Link to="/" className={Style.navLogo}>
-              <span>Sheikh-</span>
               <span>Muktadir.</span>
             </Link>
 

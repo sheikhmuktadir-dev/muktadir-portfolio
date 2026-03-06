@@ -46,6 +46,10 @@ export default function Hero() {
               })}
             </div>
           </div>
+
+          <div className={Style.scrollDownShape}>
+            <div className={Style.scrollDownDot}></div>
+          </div>
         </div>
       </div>
     </section>

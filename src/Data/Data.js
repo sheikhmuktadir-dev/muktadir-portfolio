@@ -8,12 +8,12 @@ export const navLinks = [
     index: true,
   },
   {
-    label: "About",
+    label: "About Me",
     path: "#about",
   },
   {
-    label: "Works",
-    path: "#works",
+    label: "Work",
+    path: "#work",
   },
   {
     label: "Contact",
@@ -27,7 +27,7 @@ export const heroData = {
     last: "Muktadir",
   },
   role: {
-    text: "— Frontend Developer focused on performance and clean UI.",
+    text: "— Frontend Developer focused on building fast, scalable web experiences with clean, intuitive user interfaces.",
   },
   image: {
     src: "/images/circle.svg",
@@ -61,17 +61,19 @@ export const socialLinks = [
 export const aboutData = {
   num: [
     {
-      number: "+3",
+      plus: "+",
+      number: "3",
       text: "Years Experience",
     },
     {
-      number: "+20",
+      plus: "+",
+      number: "20",
       text: "Projects Delivered",
     },
   ],
   image: "/images/banner.webp",
-  text: "Hey there!",
-  para: "I’m Sheikh Muktadir, a Frontend Developer based in Hyderabad with 3+ years of experience. I bridge the gap between ambitious design and high-performance engineering, crafting scalable React architectures that are pixel-perfect, accessible, and lightning-fast.",
+  text: "I’m Sheikh Muktadir, a frontend developer passionate about building fast, clean, and user-focused web experiences.",
+  para: "Based in Hyderabad with 3+ years of experience, I bridge the gap between ambitious design and high-performance engineering. I craft scalable React applications that are pixel-perfect, accessible, and lightning-fast, turning ideas into seamless digital experiences.",
 };
 
 export const worksCard = [
@@ -112,7 +114,7 @@ export const skillsData = [
 ];
 
 export const footerNavLinks = [
-  { name: "About", href: "#about" },
-  { name: "Works", href: "#works" },
+  { name: "About Me", href: "#about" },
+  { name: "Work", href: "#work" },
   { name: "Skills", href: "#skills" },
 ];

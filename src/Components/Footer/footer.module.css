@@ -69,12 +69,12 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 40px;
+  gap: 60px;
   margin: 0 auto;
 }
 
 .footerHeadingPara {
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .footerHeading {
@@ -97,8 +97,8 @@
   flex: none;
   line-height: 1;
   padding: 0 20px;
-  font-weight: 600;
-  font-size: 1.2rem;
+  font-weight: 400;
+  font-size: 1.25rem;
   text-transform: uppercase;
   border-radius: 300px;
   z-index: 20;
@@ -107,7 +107,7 @@
 /* back to top */
 .footerbtnTop {
   position: relative;
-  font-weight: 600;
+  font-weight: 400;
   z-index: 20;
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -192,4 +192,7 @@
     min-height: auto;
     gap: 100px;
   }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
 }

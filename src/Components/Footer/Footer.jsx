@@ -35,8 +35,8 @@ export default function Footer() {
 
             {/* back to top */}
             <a href="#top" className={Style.footerbtnTop}>
-              <FaCircleArrowUp />
               <span>Back To Top</span>
+              <FaCircleArrowUp />
             </a>
           </div>
 
@@ -45,10 +45,10 @@ export default function Footer() {
             <h5 className={Style.footerHeadingPara}>
               Ready to bring your next idea to life?
             </h5>
-            <h2 className={Style.footerHeading}>
+            <h3 className={Style.footerHeading}>
               <span>Let's Work</span>
               <span>Together</span>
-            </h2>
+            </h3>
           </div>
         </div>
       </div>

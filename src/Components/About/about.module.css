@@ -9,7 +9,7 @@
 .aboutContent {
   position: relative;
   width: 100%;
-  grid-column-gap: 4rem;
+  grid-column-gap: 3rem;
   max-width: 100%;
   margin: 0 auto;
   z-index: 20;
@@ -21,10 +21,10 @@
 
 /* about image */
 .aboutImage {
-  width: 300px;
+  width: 288px;
   flex: none;
   object-fit: cover;
-  height: 300px;
+  height: 288px;
   position: relative;
   flex-shrink: 0;
   object-position: top;
@@ -38,7 +38,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 60px;
-  max-width: 100%;
+  max-width: 900px;
   width: 100%;
   position: relative;
 }
@@ -59,11 +59,17 @@
   gap: 180px;
 }
 
+.aboutNumber span {
+  color: #8b8b8b;
+}
+
 .aboutNumber {
   display: flex;
   align-items: start;
   flex-direction: column;
-  gap: 40px;
+  border-left: 1px solid #dadada;
+  padding-left: 25px;
+  gap: 10px;
 }
 
 @media (max-width: 767.98px) {
@@ -81,11 +87,19 @@
     max-width: 100%;
   }
 
+  .aboutTextArea {
+    max-width: 100%;
+  }
+
   .aboutNumFlex {
     display: flex;
     gap: 40px;
     align-items: start;
-    flex-direction: column;
+    flex-direction: row;
+  }
+
+  .aboutNumber {
+    padding-left: 10px;
   }
 }
 
@@ -101,7 +115,11 @@
   }
 
   .aboutNumFlex {
-    gap: 80px;
+    gap: 100px;
+  }
+
+  .aboutTextArea {
+    max-width: 100%;
   }
 }
 
@@ -114,6 +132,10 @@
   .aboutNumFlex {
     gap: 140px;
   }
+
+  .aboutTextArea {
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 1280px) and (max-width: 1599.98px) {
@@ -124,5 +146,9 @@
 
   .aboutNumFlex {
     gap: 160px;
+  }
+
+  .aboutTextArea {
+    max-width: 700px;
   }
 }

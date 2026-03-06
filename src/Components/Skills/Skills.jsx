@@ -9,7 +9,7 @@ export default function Skills() {
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
-    offset: ["center center", "end center"],
+    offset: ["start start", "end center"],
   });
 
   return (
@@ -18,8 +18,9 @@ export default function Skills() {
         <div className="headingMainBox">
           <h2 className="headingMain">My Expertise</h2>
           <p className="headingMainPara">
-            Technologies and tools I use to build modern, scalable, and
-            high-performance web applications.
+            Technologies and tools I rely on to create modern, scalable, and
+            high-performance web applications, with clean code, responsive
+            designs, and seamless user experiences.
           </p>
         </div>
       </div>

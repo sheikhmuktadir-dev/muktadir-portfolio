@@ -7,12 +7,6 @@ export default function Layout() {
     <>
       <Navbar />
       <main>
-        <div className="lines-pattern">
-          <div className="line-pattern"></div>
-          <div className="line-pattern"></div>
-          <div className="line-pattern"></div>
-          <div className="line-pattern mobile-hide"></div>
-        </div>
         <Outlet />
       </main>
       <Footer />

@@ -4,13 +4,14 @@ import { worksCard } from "../../Data/Data";
 
 export default function Work() {
   return (
-    <section className={Style.workSection} id="works">
+    <section className={Style.workSection} id="work">
       <div className="container">
         <div className="headingMainBox">
           <h2 className="headingMain">Selected works</h2>
           <p className="headingMainPara">
-            A selection of projects showcasing my focus on clean design,
-            scalable code, and high-performance web experiences.
+            A curated selection of projects that highlight my dedication to
+            clean, user-focused design, scalable and maintainable code, and
+            high-performance, responsive web experiences.
           </p>
         </div>
 

@@ -24,9 +24,9 @@ export default function About() {
 
           {/* about text area */}
           <div className={Style.aboutTextArea}>
-            <h2 className={Style.aboutText}>
+            <h4 className={Style.aboutText}>
               {aboutData?.text || "Hey there!"}
-            </h2>
+            </h4>
             <p className={Style.aboutPara}>{aboutData?.para}</p>
             <div className={Style.aboutNumFlex}>
               {aboutData?.num?.map((list, index) => {
@@ -35,7 +35,10 @@ export default function About() {
                     className={Style.aboutNumber}
                     key={list?.number || index}
                   >
-                    <h2>{list.number}</h2>
+                    <h2>
+                      <span>{list.plus}</span>
+                      {list.number}
+                    </h2>
                     <p>{list.text}</p>
                   </div>
                 );
