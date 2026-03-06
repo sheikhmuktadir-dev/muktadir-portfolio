@@ -20,9 +20,9 @@ export default function SkillCard({ text, index, total, scrollYProgress }) {
   const rawRotateY = useTransform(angle, (a) => (a * 180) / Math.PI);
 
   // Smooth animations with spring
-  const x = useSpring(rawX, { stiffness: 70, damping: 22 });
-  const z = useSpring(rawZ, { stiffness: 70, damping: 22 });
-  const rotateY = useSpring(rawRotateY, { stiffness: 70, damping: 22 });
+  const x = useSpring(rawX, { stiffness: 90, damping: 18 });
+  const z = useSpring(rawZ, { stiffness: 90, damping: 18 });
+  const rotateY = useSpring(rawRotateY, { stiffness: 90, damping: 18 });
 
   // Determine relative progress to front card
   const progress = useTransform(rawZ, [-RADIUS, 0], [0, 1]);

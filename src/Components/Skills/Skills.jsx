@@ -9,7 +9,7 @@ export default function Skills() {
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
-    offset: ["start start", "end end"],
+    offset: ["center center", "end center"],
   });
 
   return (
