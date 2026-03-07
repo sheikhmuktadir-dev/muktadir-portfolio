@@ -79,25 +79,25 @@ export const aboutData = {
 export const worksCard = [
   {
     id: 1,
-    title: "Zaps Travel",
+    title: "Booking Website",
     image: "/images/zap.webp",
     link: "https://www.zapstravel.com/",
   },
   {
     id: 2,
-    title: "Workzon",
+    title: "Smart Dashboard",
     image: "/images/workzon.webp",
     link: "https://workzon.vercel.app/",
   },
   {
     id: 3,
-    title: "Almac",
+    title: "Estate Website",
     image: "/images/almac.webp",
     link: "https://almac.vercel.app/",
   },
   {
     id: 4,
-    title: "Earnon",
+    title: "Social Website",
     image: "/images/earnon.webp",
     link: "https://earnon.ai/",
   },
