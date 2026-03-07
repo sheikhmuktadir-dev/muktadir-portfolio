@@ -19,33 +19,31 @@ export default function Hero() {
 
           {/* hero large heading */}
           <h1 className={Style.heroTitle}>
-            <span>{heroData?.name?.first || "Sheikh"}</span>
+            <span>
+              {heroData?.name?.first || "Sheikh"}
+              <div className={Style.heroSocialFlex}>
+                <p className={Style.heroSubheading}>{heroData?.role?.text}</p>
+                <div className={Style.socialFlex}>
+                  {socialLinks.map((item, index) => {
+                    const Icon = item.icon;
+                    return (
+                      <a
+                        key={item.label || index}
+                        href={item.url}
+                        className={Style.socialBtn}
+                        aria-label={item.label}
+                        target={item.label === "Email" ? "" : "_blank"}
+                        rel="noopener noreferrer"
+                      >
+                        <Icon />
+                      </a>
+                    );
+                  })}
+                </div>
+              </div>
+            </span>
             <span>{heroData?.name?.last || "Muktadir"}</span>
           </h1>
-
-          {/* hero social links */}
-          <div className={Style.heroSocialFlex}>
-            <p className={Style.heroSubheading}>
-              <span>{heroData?.role?.text}</span>
-            </p>
-            <div className={Style.socialFlex}>
-              {socialLinks.map((item, index) => {
-                const Icon = item.icon;
-                return (
-                  <a
-                    key={item.label || index}
-                    href={item.url}
-                    className={Style.socialBtn}
-                    aria-label={item.label}
-                    target={item.label === "Email" ? "" : "_blank"}
-                    rel="noopener noreferrer"
-                  >
-                    <Icon />
-                  </a>
-                );
-              })}
-            </div>
-          </div>
 
           <div className={Style.scrollDownShape}>
             <div className={Style.scrollDownDot}></div>
