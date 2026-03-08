@@ -27,7 +27,7 @@
 
 .heroTitle span:first-child {
   display: flex;
-  gap: 150px;
+  gap: 140px;
   align-items: center;
 }
 
@@ -41,7 +41,7 @@
   border-radius: 100px;
   position: absolute;
   right: 0;
-  bottom: 40px;
+  bottom: 20px;
   justify-content: center;
   align-items: flex-start;
   width: 28px;
@@ -107,7 +107,7 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 /* social btn */
@@ -223,7 +223,7 @@
 
   .heroTitle span:first-child {
     display: flex;
-    gap: 50px;
+    gap: 80px;
     align-items: center;
   }
 
@@ -245,7 +245,7 @@
 
   .heroTitle span:first-child {
     display: flex;
-    gap: 100px;
+    gap: 80px;
     align-items: center;
   }
 }

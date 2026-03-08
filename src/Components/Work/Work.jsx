@@ -7,7 +7,7 @@ export default function Work() {
     <section className={Style.workSection} id="work">
       <div className="container">
         <div className="headingMainBox">
-          <h2 className="headingMain">Selected works</h2>
+          <h2 className="headingMain">Selected Work</h2>
           <p className="headingMainPara">
             A curated selection of projects that highlight my dedication to
             clean, user-focused design, scalable and maintainable code, and

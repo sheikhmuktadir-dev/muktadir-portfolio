@@ -20,6 +20,7 @@ export default function WorkCard({ item }) {
 
       <div className={Style.workCardBottomFlex}>
         <button className={Style.workCardText}>{item.title}</button>
+        <button className={Style.workCardText}>{item.title2}</button>
       </div>
     </a>
   );

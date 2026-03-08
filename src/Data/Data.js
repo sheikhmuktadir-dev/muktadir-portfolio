@@ -62,7 +62,7 @@ export const aboutData = {
   num: [
     {
       plus: "+",
-      number: "3",
+      number: "03",
       text: "Years Experience",
     },
     {
@@ -79,27 +79,31 @@ export const aboutData = {
 export const worksCard = [
   {
     id: 1,
-    title: "Booking Website",
-    image: "/images/zap.webp",
-    link: "https://www.zapstravel.com/",
+    title: "EarnOn",
+    title2: "Creators",
+    image: "/images/earnon.webp",
+    link: "https://earnon.ai/",
   },
   {
     id: 2,
-    title: "Smart Dashboard",
+    title: "Workzon Free",
+    title2: "Dashboard",
     image: "/images/workzon.webp",
     link: "https://workzon.vercel.app/",
   },
   {
     id: 3,
-    title: "Estate Website",
-    image: "/images/almac.webp",
-    link: "https://almac.vercel.app/",
+    title: "Zaps Travel",
+    title2: "Booking",
+    image: "/images/zap.webp",
+    link: "https://www.zapstravel.com/",
   },
   {
     id: 4,
-    title: "Social Website",
-    image: "/images/earnon.webp",
-    link: "https://earnon.ai/",
+    title: "Almac Estate",
+    title2: "Properties",
+    image: "/images/almac.webp",
+    link: "https://almac.vercel.app/",
   },
 ];
 

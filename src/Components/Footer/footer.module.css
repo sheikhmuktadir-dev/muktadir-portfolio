@@ -24,22 +24,12 @@
 }
 
 /* social link */
-.footerSocial {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  text-align: center;
-}
-
 .socialFlex {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 15px;
 }
 
 .socialBtn {

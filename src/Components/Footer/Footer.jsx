@@ -45,10 +45,10 @@ export default function Footer() {
             <h5 className={Style.footerHeadingPara}>
               Ready to bring your next idea to life?
             </h5>
-            <h3 className={Style.footerHeading}>
+            <h2 className={Style.footerHeading}>
               <span>Let's Work</span>
               <span>Together</span>
-            </h3>
+            </h2>
           </div>
         </div>
       </div>

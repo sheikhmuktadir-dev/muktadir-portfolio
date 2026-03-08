@@ -12,6 +12,7 @@
   gap: 1.5rem;
   max-width: 100%;
   width: 100%;
+  align-items: stretch;
   z-index: 20;
 }
 

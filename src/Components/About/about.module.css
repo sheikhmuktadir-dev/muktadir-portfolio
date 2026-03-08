@@ -50,13 +50,13 @@
 }
 
 .aboutPara {
-  max-width: 600px;
+  max-width: 550px;
 }
 
 .aboutNumFlex {
   display: flex;
   align-items: start;
-  gap: 180px;
+  gap: 140px;
 }
 
 .aboutNumber span {
@@ -89,6 +89,7 @@
 
   .aboutTextArea {
     max-width: 100%;
+    gap: 40px;
   }
 
   .aboutNumFlex {
@@ -129,12 +130,16 @@
     height: 250px;
   }
 
+  .aboutContent {
+    grid-template-columns: 0.5fr 1fr;
+  }
+
   .aboutNumFlex {
-    gap: 140px;
+    gap: 80px;
   }
 
   .aboutTextArea {
-    max-width: 100%;
+    max-width: 600px;
   }
 }
 
@@ -145,7 +150,7 @@
   }
 
   .aboutNumFlex {
-    gap: 160px;
+    gap: 80px;
   }
 
   .aboutTextArea {
