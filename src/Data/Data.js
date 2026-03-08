@@ -72,8 +72,8 @@ export const aboutData = {
     },
   ],
   image: "/images/banner.webp",
-  text: "I’m Sheikh Muktadir, a frontend developer passionate about building fast, clean, and user-focused web experiences.",
-  para: "Based in Hyderabad with 3+ years of experience, I bridge the gap between ambitious design and high-performance engineering. I craft scalable React applications that are pixel-perfect, accessible, and lightning-fast, turning ideas into seamless digital experiences.",
+  text: "I’m Sheikh Muktadir, a frontend developer focused on creating sleek, modern UI with smooth interactions.",
+  para: "Based in Hyderabad with 3+ years of experience, I bridge ambitious design with high-performance engineering. I build scalable React applications that are pixel-perfect, accessible, and lightning-fast—turning ideas into seamless, impactful digital experiences.",
 };
 
 export const worksCard = [
