@@ -79,14 +79,14 @@ export const aboutData = {
 export const worksCard = [
   {
     id: 1,
-    title: "EarnOn",
-    title2: "Creators",
-    image: "/images/earnon.webp",
-    link: "https://earnon.ai/",
+    title: "Fitgo",
+    title2: "Fitness Website",
+    image: "/images/fitgo.webp",
+    link: "https://fitgo-fitness.vercel.app/",
   },
   {
     id: 2,
-    title: "Workzon Free",
+    title: "Workzon",
     title2: "Dashboard",
     image: "/images/workzon.webp",
     link: "https://workzon.vercel.app/",
