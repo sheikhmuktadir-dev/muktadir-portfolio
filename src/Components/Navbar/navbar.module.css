@@ -79,6 +79,10 @@
 }
 
 @media (max-width: 1023.98px) {
+  .navBar {
+    top: 20px;
+  }
+
   .navMenu {
     position: fixed;
     inset: 0;
