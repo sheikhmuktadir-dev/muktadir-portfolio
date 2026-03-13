@@ -79,31 +79,31 @@ export const aboutData = {
 export const worksCard = [
   {
     id: 1,
+    title: "Quickflix",
+    title2: "Movie Website",
+    image: "/images/quickflix.webp",
+    link: "https://quickflix-shows.vercel.app/",
+  },
+  {
+    id: 2,
     title: "Fitgo",
     title2: "Fitness Website",
     image: "/images/fitgo.webp",
     link: "https://fitgo-fitness.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Workzon",
     title2: "Dashboard",
     image: "/images/workzon.webp",
     link: "https://workzon.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Zaps Travel",
-    title2: "Booking",
+    title2: "Booking Website",
     image: "/images/zap.webp",
     link: "https://www.zapstravel.com/",
-  },
-  {
-    id: 4,
-    title: "Almac Estate",
-    title2: "Properties",
-    image: "/images/almac.webp",
-    link: "https://almac.vercel.app/",
   },
 ];
 
