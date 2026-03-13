@@ -80,14 +80,14 @@ export const worksCard = [
   {
     id: 1,
     title: "Quickflix",
-    title2: "Movie Website",
+    title2: "Movie Platform",
     image: "/images/quickflix.webp",
     link: "https://quickflix-shows.vercel.app/",
   },
   {
     id: 2,
     title: "Fitgo",
-    title2: "Fitness Website",
+    title2: "Fitness",
     image: "/images/fitgo.webp",
     link: "https://fitgo-fitness.vercel.app/",
   },
@@ -101,7 +101,7 @@ export const worksCard = [
   {
     id: 4,
     title: "Zaps Travel",
-    title2: "Booking Website",
+    title2: "Booking",
     image: "/images/zap.webp",
     link: "https://www.zapstravel.com/",
   },
