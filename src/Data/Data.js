@@ -93,7 +93,7 @@ export const worksCard = [
   },
   {
     id: 3,
-    title: "Workzon",
+    title: "Workzone",
     title2: "Dashboard",
     image: "/images/workzon.webp",
     link: "https://workzon.vercel.app/",
