@@ -86,17 +86,17 @@ export const worksCard = [
   },
   {
     id: 2,
+    title: "Zenith UI",
+    title2: "Dashboard",
+    image: "/images/zenith.webp",
+    link: "https://zenith-ui-dashboard.vercel.app/",
+  },
+  {
+    id: 3,
     title: "Fitgo",
     title2: "Fitness",
     image: "/images/fitgo.webp",
     link: "https://fitgo-fitness.vercel.app/",
-  },
-  {
-    id: 3,
-    title: "Workzone",
-    title2: "Dashboard",
-    image: "/images/workzon.webp",
-    link: "https://workzon.vercel.app/",
   },
   {
     id: 4,
