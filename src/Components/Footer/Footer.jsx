@@ -46,8 +46,8 @@ export default function Footer() {
               Ready to bring your next idea to life?
             </h5>
             <h2 className={Style.footerHeading}>
-              <span>Let's Work</span>
-              <span>Together</span>
+              <span>LET’S BUILD </span>
+              <span>SOMETHING GREAT TOGETHER</span>
             </h2>
           </div>
         </div>

@@ -172,6 +172,11 @@
     gap: 20px;
   }
 
+  .footerHeadingArea {
+    margin: 0;
+    max-width: 100%;
+  }
+
   .footerGrid {
     gap: 50px;
   }

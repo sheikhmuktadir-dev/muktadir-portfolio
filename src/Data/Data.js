@@ -27,7 +27,7 @@ export const heroData = {
     last: "Muktadir",
   },
   role: {
-    text: "— Frontend Developer focused on building fast, scalable web experiences with clean, intuitive user interfaces.",
+    text: "— Crafting high-performance web experiences with clean design and intuitive interactions.",
   },
   image: {
     src: "/images/circle.svg",
@@ -63,58 +63,58 @@ export const aboutData = {
     {
       plus: "+",
       number: "03",
-      text: "Years Experience",
+      text: "Years of Experience Building modern frontend applications",
     },
     {
       plus: "+",
       number: "20",
-      text: "Projects Delivered",
+      text: "Projects Delivered Dashboards, SaaS, and scalable UI systems",
     },
   ],
   image: "/images/banner.webp",
-  text: "I’m Sheikh Muktadir, a frontend developer focused on creating sleek, modern UI with smooth interactions.",
-  para: "Based in Hyderabad with 3+ years of experience, I bridge ambitious design with high-performance engineering. I build scalable React applications that are pixel-perfect, accessible, and lightning-fast—turning ideas into seamless, impactful digital experiences.",
+  text: "I’m Sheikh Muktadir — a React.js developer building scalable, high-performance web applications.",
+  para: "Based in Hyderabad with 3+ years of experience, I specialize in building React applications that combine performance, clean architecture, and seamless user experience. I turn complex ideas into fast, intuitive, and production-ready digital products.",
 };
 
 export const worksCard = [
   {
     id: 1,
     title: "Quickflix",
-    title2: "Movie Platform",
+    title2: "Movie Explorer",
     image: "/images/quickflix.webp",
     link: "https://quickflix-shows.vercel.app/",
   },
   {
     id: 2,
     title: "Zenith UI",
-    title2: "Dashboard",
+    title2: "Dashboard App",
     image: "/images/zenith.webp",
     link: "https://zenith-ui-dashboard.vercel.app/",
   },
   {
     id: 3,
     title: "Fitgo",
-    title2: "Fitness",
+    title2: "Gym Website",
     image: "/images/fitgo.webp",
     link: "https://fitgo-fitness.vercel.app/",
   },
   {
     id: 4,
     title: "Zaps Travel",
-    title2: "Booking",
+    title2: "Travel Booking UI",
     image: "/images/zap.webp",
     link: "https://www.zapstravel.com/",
   },
 ];
 
 export const skillsData = [
-  "React.Js",
-  "Git/Github",
   "HTML/CSS",
+  "Git/Github",
   "Bootstrap",
   "Tailwind CSS",
   "JavaScript (ES6+)",
   "Redux Toolkit",
+  "React.Js",
 ];
 
 export const footerNavLinks = [
