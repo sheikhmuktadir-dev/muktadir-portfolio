@@ -72,7 +72,7 @@ export const aboutData = {
     },
   ],
   image: "/images/banner.webp",
-  text: "I’m Sheikh Muktadir — a React.js developer building scalable, high-performance web applications.",
+  text: "I’m Sheikh Muktadir — a frontend developer building scalable, high-performance web applications.",
   para: "Based in Hyderabad with 3+ years of experience, I specialize in building React applications that combine performance, clean architecture, and seamless user experience. I turn complex ideas into fast, intuitive, and production-ready digital products.",
 };
 
