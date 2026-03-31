@@ -4,7 +4,7 @@
   width: 100%;
   height: 100%;
   z-index: 50;
-  border-radius: 20px;
+  border-radius: 10px;
   min-height: 700px;
   transition: all 0.3s ease;
 }
@@ -13,7 +13,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -22,7 +22,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: all 0.3s ease;
 }
 
@@ -38,7 +38,7 @@
   z-index: 100;
   width: 100%;
   align-items: end;
-  padding: 35px 30px;
+  padding: 25px 20px;
   justify-content: space-between;
 }
 
@@ -87,11 +87,11 @@
   }
 
   .workCardBottomFlex {
-    padding: 20px;
+    padding: 10px;
   }
 
   .workCardText {
-    padding: 5px 10px;
+    padding: 5px;
     font-size: 1rem;
   }
 
@@ -108,7 +108,7 @@
   }
 
   .workCardBottomFlex {
-    padding: 20px;
+    padding: 20px 10px;
   }
 
   .workCard {
@@ -126,7 +126,7 @@
   }
 
   .workCardBottomFlex {
-    padding: 20px;
+    padding: 20px 10px;
   }
 
   .workCard {
@@ -146,6 +146,6 @@
   }
 
   .workCardBottomFlex {
-    padding: 25px;
+    padding: 20px 15px;
   }
 }
