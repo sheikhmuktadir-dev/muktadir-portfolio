@@ -72,36 +72,32 @@ export const aboutData = {
     },
   ],
   image: "/images/banner.webp",
-  text: "I’m Sheikh Muktadir — a frontend developer building scalable, high-performance web applications.",
-  para: "Based in Hyderabad with 3+ years of experience, I specialize in building React applications that combine performance, clean architecture, and seamless user experience. I turn complex ideas into fast, intuitive, and production-ready digital products.",
+  text: "I’m Sheikh Muktadir — a Frontend developer building scalable, high-performance React applications.",
+  para: "Based in Hyderabad with 3+ years of experience, I build scalable React applications focused on performance, clean architecture, and seamless user experience—turning complex ideas into fast, production-ready products.",
 };
 
 export const worksCard = [
   {
     id: 1,
-    title: "Quickflix",
-    title2: "Movie Explorer",
+    title: "QuickFlix",
     image: "/images/quickflix.webp",
     link: "https://quickflix-shows.vercel.app/",
   },
   {
     id: 2,
     title: "Zenith UI",
-    title2: "Dashboard App",
     image: "/images/zenith.webp",
     link: "https://zenith-ui-dashboard.vercel.app/",
   },
   {
     id: 3,
-    title: "Fitgo",
-    title2: "Gym Website",
+    title: "Fitgo Fitness",
     image: "/images/fitgo.webp",
     link: "https://fitgo-fitness.vercel.app/",
   },
   {
     id: 4,
     title: "Zaps Travel",
-    title2: "Travel Booking UI",
     image: "/images/zap.webp",
     link: "https://www.zapstravel.com/",
   },

@@ -9,8 +9,8 @@ export default function Work() {
         <div className="headingMainBox">
           <h2 className="headingMain">Selected Work</h2>
           <p className="headingMainPara">
-            A selection of projects showcasing my ability to build scalable,
-            real-world applications with clean architecture and modern UI.
+            A selection of projects demonstrating my ability to build scalable,
+            production-ready applications with clean architecture and modern UI.
           </p>
         </div>
 

@@ -71,8 +71,8 @@
 /* nav close toggle */
 .navBarClose {
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 20px;
+  right: 20px;
   font-size: 2rem;
   display: none;
   background: transparent;
@@ -89,7 +89,7 @@
     height: 100vh;
     justify-content: center;
     background: #dadada;
-    transform: translate(-150%);
+    transform: translate(150%);
     opacity: 0;
     transition: all 0.3s ease;
   }

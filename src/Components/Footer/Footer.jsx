@@ -43,11 +43,10 @@ export default function Footer() {
           {/* heading */}
           <div className={Style.footerHeadingArea}>
             <h5 className={Style.footerHeadingPara}>
-              Ready to bring your next idea to life?
+              Ready to contribute as a Frontend React Developer.
             </h5>
             <h2 className={Style.footerHeading}>
-              <span>LET’S BUILD </span>
-              <span>SOMETHING GREAT TOGETHER</span>
+              <span>Let’s Work Together</span>
             </h2>
           </div>
         </div>

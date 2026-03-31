@@ -18,8 +18,8 @@ export default function Skills() {
         <div className="headingMainBox">
           <h2 className="headingMain">My Expertise</h2>
           <p className="headingMainPara">
-            I use modern technologies and best practices to create fast,
-            maintainable, and user-friendly applications.
+            I build fast, maintainable, and user-focused applications using
+            modern technologies and proven best practices.
           </p>
         </div>
       </div>

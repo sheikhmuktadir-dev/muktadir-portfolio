@@ -1,5 +1,6 @@
 import { MdArrowOutward } from "react-icons/md";
 import Style from "./card.module.css";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 export default function WorkCard({ item }) {
   return (
@@ -20,7 +21,10 @@ export default function WorkCard({ item }) {
 
       <div className={Style.workCardBottomFlex}>
         <button className={Style.workCardText}>{item.title}</button>
-        <button className={Style.workCardText}>{item.title2}</button>
+        <button className={Style.workCardText}>
+          <span>View Live</span>
+          <MdOutlineArrowOutward />
+        </button>
       </div>
     </a>
   );
