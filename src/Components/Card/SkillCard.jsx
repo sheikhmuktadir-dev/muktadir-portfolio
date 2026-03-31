@@ -7,6 +7,8 @@ export default function SkillCard({ text, index, total, scrollYProgress }) {
   const [screen, setScreen] = useState("desktop");
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
+
     const handleResize = () => {
       const width = window.innerWidth;
 

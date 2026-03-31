@@ -1,6 +1,5 @@
-import { MdArrowOutward } from "react-icons/md";
-import Style from "./card.module.css";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import Style from "./card.module.css";
 
 export default function WorkCard({ item }) {
   return (
