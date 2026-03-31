@@ -64,7 +64,7 @@
 }
 
 .footerHeadingPara {
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .footerHeading {
@@ -187,7 +187,4 @@
     min-height: auto;
     gap: 100px;
   }
-}
-
-@media (min-width: 768px) and (max-width: 1023.98px) {
 }

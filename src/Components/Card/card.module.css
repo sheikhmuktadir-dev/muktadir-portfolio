@@ -33,7 +33,7 @@
   z-index: 100;
   width: 100%;
   align-items: end;
-  padding: 25px 20px;
+  padding: 25px 25px;
   justify-content: space-between;
 }
 
@@ -112,6 +112,10 @@
     max-width: 700px;
     margin: 0 auto;
   }
+
+  .workCardText {
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1279.98px) {
@@ -122,11 +126,15 @@
   }
 
   .workCardBottomFlex {
-    padding: 20px 10px;
+    padding: 20px 15px;
   }
 
   .workCard {
     min-height: 500px;
+  }
+
+  .workCardText {
+    font-size: 1.3rem;
   }
 }
 
@@ -142,6 +150,10 @@
   }
 
   .workCardBottomFlex {
-    padding: 25px 15px;
+    padding: 25px 20px;
+  }
+
+  .workCardText {
+    font-size: 1.4rem;
   }
 }

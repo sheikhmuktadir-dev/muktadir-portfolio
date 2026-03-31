@@ -20,11 +20,11 @@ export default function WorkCard({ item }) {
       </div>
 
       <div className={Style.workCardBottomFlex}>
-        <button className={Style.workCardText}>{item.title}</button>
-        <button className={Style.workCardText}>
+        <div className={Style.workCardText}>{item.title}</div>
+        <div className={Style.workCardText}>
           <span>View Live</span>
           <MdOutlineArrowOutward />
-        </button>
+        </div>
       </div>
     </a>
   );
