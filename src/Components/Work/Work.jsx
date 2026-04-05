@@ -12,6 +12,9 @@ export default function Work() {
             A selection of projects demonstrating my ability to build scalable,
             production-ready applications with clean architecture and modern UI.
           </p>
+          <button className="headingCountbtn">
+            {String(worksCard.length).padStart(2, "0")}
+          </button>
         </div>
 
         <div className={Style.workCardGrid}>

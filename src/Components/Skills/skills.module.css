@@ -1,7 +1,6 @@
 .skillWrapper {
   min-height: 500vh;
   position: relative;
-  padding: var(--section-space-top);
 }
 
 .skillSticky {

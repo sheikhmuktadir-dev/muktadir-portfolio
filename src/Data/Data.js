@@ -118,3 +118,38 @@ export const footerNavLinks = [
   { name: "Work", href: "#work" },
   { name: "Skills", href: "#skills" },
 ];
+
+export const experience = [
+  {
+    id: 1,
+    company: "Bizionic Technologies",
+    designation: "Senior Frontend Developer",
+    duration: "Jul 2024 – Sep 2025",
+    description:
+      "Architected reusable React component systems to standardize UI patterns and accelerate development cycles. Specialized in integrating complex REST APIs with structured async handling and optimizing frontend performance to ensure high-speed, responsive user interfaces.",
+  },
+  {
+    id: 2,
+    company: "Pencap Technologies",
+    designation: "Frontend Developer",
+    duration: "Mar 2024 – Jun 2024",
+    description:
+      "Engineered responsive interfaces with a focus on modularity and scalability. Refactored monolithic codebases into functional components and custom hooks, implementing performance strategies like lazy loading and code-splitting to enhance the overall user experience.",
+  },
+  {
+    id: 3,
+    company: "Zaps Marketing",
+    designation: "UI Developer",
+    duration: "Sep 2022 – Feb 2024",
+    description:
+      "Transformed high-fidelity UI/UX designs into pixel-perfect, interactive React applications. Developed a library of shared UI components to maintain visual consistency and streamlined the hand-off process between design and engineering teams.",
+  },
+  {
+    id: 4,
+    company: "Naresh i Technologies",
+    designation: "Technical Mentor",
+    duration: "Apr 2022 – Aug 2022",
+    description:
+      "Mentored junior developers in React.js, component architecture, and real-world project structuring, ensuring best practices in modern UI engineering and state management.",
+  },
+];

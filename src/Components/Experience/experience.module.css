@@ -1,0 +1,11 @@
+.experienceSection {
+  position: relative;
+  max-width: 100%;
+  padding: var(--section-space);
+  width: 100%;
+}
+
+.experienceArea {
+  position: relative;
+  padding: var(--content-top-space);
+}

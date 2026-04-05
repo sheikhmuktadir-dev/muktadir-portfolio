@@ -21,6 +21,9 @@ export default function Skills() {
             I build fast, maintainable, and user-focused applications using
             modern technologies and proven best practices.
           </p>
+          <button className="headingCountbtn">
+            {String(skillsData.length).padStart(2, "0")}
+          </button>
         </div>
       </div>
 
