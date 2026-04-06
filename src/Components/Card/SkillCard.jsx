@@ -14,7 +14,8 @@ export default function SkillCard({ text, index, total, scrollYProgress }) {
 
       if (width < 768) setScreen("mobile");
       else if (width < 1200) setScreen("laptop");
-      else setScreen("desktop");
+      else if (width < 1600) setScreen("desktop");
+      else setScreen("large"); // ✅ 1600px+
     };
 
     handleResize();
@@ -22,13 +23,15 @@ export default function SkillCard({ text, index, total, scrollYProgress }) {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // ✅ Responsive radius (FIX GAP FOR ALL DEVICES)
+  // ✅ Responsive radius
   const RADIUS =
     screen === "mobile"
-      ? Math.max(240, total * 50) // 📱 tight spacing
+      ? Math.max(240, total * 50)
       : screen === "laptop"
-        ? Math.max(380, total * 70) // 💻 reduced spacing
-        : Math.max(500, total * 85); // 🖥 desktop premium
+        ? Math.max(380, total * 60)
+        : screen === "desktop"
+          ? Math.max(420, total * 70)
+          : Math.max(460, total * 80); // ✅ 1600px+
 
   const angleStep = (Math.PI * 2) / total;
   const baseAngle = angleStep * index;
@@ -53,7 +56,7 @@ export default function SkillCard({ text, index, total, scrollYProgress }) {
   // 👁️ Opacity
   const opacity = useTransform(progress, (p) => Math.max(0.3, Math.min(1, p)));
 
-  // 🔍 Scale (mobile slightly bigger)
+  // 🔍 Scale
   const scale = useTransform(progress, (p) =>
     screen === "mobile" ? 0.9 + 0.15 * p : 0.8 + 0.2 * p,
   );
@@ -69,7 +72,13 @@ export default function SkillCard({ text, index, total, scrollYProgress }) {
         scale,
         position: "absolute",
         transformPerspective:
-          screen === "mobile" ? 1000 : screen === "laptop" ? 1300 : 1600,
+          screen === "mobile"
+            ? 1000
+            : screen === "laptop"
+              ? 1100
+              : screen === "desktop"
+                ? 1600
+                : 1800, // ✅ slightly stronger depth for large screens
         transformStyle: "preserve-3d",
       }}
     >

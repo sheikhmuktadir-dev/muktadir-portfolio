@@ -91,13 +91,13 @@
 
 @media (max-width: 1023.98px) {
   .accordionButton {
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 1fr auto;
     grid-template-areas:
-      "company company"
-      "role duration";
+      "company duration"
+      "role role";
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    gap: 10px;
+    gap: 5px;
   }
 
   /* Assigning the children to the grid areas */
@@ -112,7 +112,8 @@
 
   .accordionButton > *:nth-child(3) {
     grid-area: duration;
-    justify-self: end; /* Keeps the date/icon locked to the right margin */
+    justify-self: end;
+    align-self: start; /* ensures top alignment */
   }
 
   .accordionButton span:nth-child(2) {
