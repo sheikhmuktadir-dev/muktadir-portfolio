@@ -72,7 +72,7 @@
 .navBarClose {
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 15px;
   font-size: 2rem;
   display: none;
   background: transparent;
@@ -89,13 +89,16 @@
     height: 100vh;
     justify-content: center;
     background: #dadada;
-    transform: translate(150%);
+    transform: translate(150%) rotate(180deg);
     opacity: 0;
-    transition: all 0.3s ease;
+    transition:
+      transform 0.4s ease,
+      opacity 0.4s ease;
+    transform-origin: center;
   }
 
   .navMenuShow {
-    transform: translate(0);
+    transform: translate(0) rotate(0deg);
     opacity: 1;
   }
 
