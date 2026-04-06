@@ -123,7 +123,7 @@ export const experience = [
   {
     id: 1,
     company: "Bizionic Technologies",
-    designation: "Senior Frontend Developer",
+    designation: "Frontend Developer",
     duration: "Jul 2024 – Sep 2025",
     description:
       "Architected reusable React component systems to standardize UI patterns and accelerate development cycles. Specialized in integrating complex REST APIs with structured async handling and optimizing frontend performance to ensure high-speed, responsive user interfaces.",
