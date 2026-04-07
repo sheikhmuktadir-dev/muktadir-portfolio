@@ -1,6 +1,7 @@
 .experienceSection {
   position: relative;
   max-width: 100%;
+  overflow: hidden;
   padding: var(--section-space);
   width: 100%;
 }

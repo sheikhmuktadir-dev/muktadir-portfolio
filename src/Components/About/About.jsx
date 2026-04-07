@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import Style from "./about.module.css";
 import { aboutData } from "../../Data/Data";
@@ -9,10 +9,27 @@ export default function About() {
   const [progress, setProgress] = useState(0);
 
   const text = aboutData?.text || "Hey there!";
-  const wordsWithSpaces = text.split(/(\s+)/);
-  const totalWords = wordsWithSpaces.filter((w) => w.trim() !== "").length;
+  const chars = text.split("");
+  const totalChars = chars.length;
 
-  // Helper: interpolate between two colors
+  // ✅ Scroll tracking for section movement
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start 90%", "end 30%"],
+  });
+
+  const x = useTransform(scrollYProgress, [0, 0.6], [150, 0]);
+  const y = useTransform(scrollYProgress, [0, 0.6], [150, 0]);
+  const scale = useTransform(scrollYProgress, [0, 0.6], [0.95, 1]);
+  const opacity = useTransform(scrollYProgress, [0, 0.3], [0, 1]);
+
+  // ✅ Smooth spring effect
+  const smoothX = useSpring(x, { stiffness: 80, damping: 20 });
+  const smoothY = useSpring(y, { stiffness: 80, damping: 20 });
+  const smoothOpacity = useSpring(opacity);
+  const smoothScale = useSpring(scale);
+
+  // Helper: interpolate colors
   const interpolateColor = (startColor, endColor, factor) => {
     const s = parseInt(startColor.slice(1), 16);
     const e = parseInt(endColor.slice(1), 16);
@@ -31,10 +48,10 @@ export default function About() {
     return `rgb(${r}, ${g}, ${b})`;
   };
 
-  // Easing function for smoother transition
+  // Easing function
   const easeInOut = (t) => (t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t);
 
-  // Update scroll progress
+  // ✅ Scroll progress for text animation
   useEffect(() => {
     const handleScroll = () => {
       if (!sectionRef.current) return;
@@ -55,46 +72,54 @@ export default function About() {
 
     window.addEventListener("scroll", handleScroll);
     handleScroll();
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <section className={Style.aboutSection} ref={sectionRef} id="about">
       <div className="container">
-        <div className={Style.aboutContent}>
+        {/* ✅ Smooth section animation */}
+        <motion.div
+          className={Style.aboutContent}
+          style={{
+            x: smoothX,
+            y: smoothY,
+            opacity: smoothOpacity,
+            scale: smoothScale,
+          }}
+        >
+          {/* ✅ Image */}
           <img
             src={aboutData?.image || image}
-            alt="about image"
+            alt="about"
             loading="lazy"
             className={Style.aboutImage}
           />
+
+          {/* ✅ Text Area */}
           <div className={Style.aboutTextArea}>
             <h4 className={Style.aboutText}>
-              {wordsWithSpaces.map((word, i) => {
-                if (word.trim() === "") return word;
-
-                const wordIndex =
-                  wordsWithSpaces.slice(0, i + 1).filter((w) => w.trim() !== "")
-                    .length - 1;
-
-                // Linear progress for this word
-                const start = wordIndex / totalWords;
-                const end = (wordIndex + 1) / totalWords;
+              {chars.map((char, i) => {
+                const start = i / totalChars;
+                const end = (i + 1) / totalChars;
 
                 let factor = (progress - start) / (end - start);
                 factor = Math.min(Math.max(factor, 0), 1);
-                factor = easeInOut(factor); // smooth easing
+                factor = easeInOut(factor);
 
                 const color = interpolateColor("#dadada", "#0f0f0f", factor);
 
                 return (
                   <motion.span
                     key={i}
-                    style={{ display: "inline-block", color }}
-                    animate={{ color }}
-                    transition={{ duration: 0.3 }}
+                    style={{
+                      display: "inline",
+                      whiteSpace: "pre-wrap",
+                      color,
+                    }}
                   >
-                    {word}
+                    {char}
                   </motion.span>
                 );
               })}
@@ -102,6 +127,7 @@ export default function About() {
 
             <p className={Style.aboutPara}>{aboutData?.para}</p>
 
+            {/* ✅ Numbers */}
             <div className={Style.aboutNumFlex}>
               {aboutData?.num?.map((list, index) => (
                 <div className={Style.aboutNumber} key={list?.number || index}>
@@ -114,7 +140,7 @@ export default function About() {
               ))}
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
