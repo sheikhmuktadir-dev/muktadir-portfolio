@@ -33,11 +33,13 @@ export default function Footer() {
               })}
             </div>
 
-            {/* back to top */}
-            <a href="#top" className={Style.footerbtnTop}>
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className={Style.footerbtnTop}
+            >
               <span>Back To Top</span>
               <FaCircleArrowUp />
-            </a>
+            </button>
           </div>
 
           {/* heading */}
