@@ -1,30 +1,62 @@
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Style from "./card.module.css";
+import { motion } from "framer-motion";
 
 export default function WorkCard({ item }) {
   return (
-    <a
+    <motion.a
       href={item.link}
       target="_blank"
       rel="noreferrer"
       className={Style.workCard}
+      variants={{
+        hidden: { opacity: 0, y: 80, scale: 0.95 },
+        show: {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          transition: { duration: 0.6, ease: "easeOut" },
+        },
+      }}
+      whileHover="hover"
     >
-      <div className={Style.workCardImageArea}>
-        <img
+      <motion.div className={Style.workCardImageArea}>
+        <motion.img
           src={item.image}
           alt={item.title}
-          loading="lazy"
           className={Style.workCardImage}
+          variants={{
+            hover: { scale: 1.1 },
+          }}
+          transition={{ duration: 0.6 }}
         />
-      </div>
+      </motion.div>
 
-      <div className={Style.workCardBottomFlex}>
+      <motion.div
+        className={Style.overlay}
+        variants={{
+          hover: { opacity: 1 },
+        }}
+      />
+
+      <motion.div
+        className={Style.workCardBottomFlex}
+        variants={{
+          hover: { y: -10 },
+        }}
+      >
         <div className={Style.workCardText}>{item.title}</div>
-        <div className={Style.workCardText}>
+
+        <motion.div
+          className={Style.workCardText}
+          variants={{
+            hover: { x: 8 },
+          }}
+        >
           <span>View Live</span>
           <MdOutlineArrowOutward />
-        </div>
-      </div>
-    </a>
+        </motion.div>
+      </motion.div>
+    </motion.a>
   );
 }

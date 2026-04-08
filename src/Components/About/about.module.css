@@ -7,6 +7,18 @@
   padding: var(--section-space);
 }
 
+.aboutSection::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0, 150, 255, 0.15), transparent);
+  top: 20%;
+  left: 10%;
+  filter: blur(100px);
+  z-index: 0;
+}
+
 .aboutContent {
   position: relative;
   width: 100%;
@@ -17,6 +29,7 @@
   grid-template-rows: auto auto;
   grid-template-columns: 0.5fr 1fr;
   width: 100%;
+
   display: grid;
 }
 
@@ -28,6 +41,8 @@
   height: 288px;
   position: relative;
   flex-shrink: 0;
+  transition: all 0.4s ease;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
   object-position: top;
   border-radius: 300px;
   filter: grayscale(100%) brightness(70%) contrast(100%);
@@ -47,7 +62,12 @@
 .aboutText {
   position: relative;
   z-index: 50;
-  will-change: line-height, transform;
+  letter-spacing: 0.5px;
+  word-break: normal;
+}
+
+.aboutText span {
+  display: inline-block;
 }
 
 .aboutPara {
@@ -140,7 +160,7 @@
   }
 
   .aboutTextArea {
-    max-width: 500px;
+    max-width: 600px;
   }
 }
 
@@ -155,6 +175,6 @@
   }
 
   .aboutTextArea {
-    max-width: 600px;
+    max-width: 700px;
   }
 }

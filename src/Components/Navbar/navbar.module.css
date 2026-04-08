@@ -1,126 +1,158 @@
+/* 🔥 NAVBAR */
 .navBar {
-  position: absolute;
-  top: 40px;
+  position: fixed;
+  top: 20px;
   left: 0;
   right: 0;
-  max-width: 100%;
   width: 100%;
-  display: flex;
-  align-items: center;
-  z-index: 99999;
+  z-index: 9999;
 }
 
+/* INNER */
 .navBarInner {
-  position: relative;
   display: flex;
   align-items: center;
-  flex: 1;
+  justify-content: space-between;
 }
 
-.navLogoArea {
-  position: relative;
-}
-
-/* nav logo */
+/* LOGO */
 .navLogo {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  line-height: 0.8em;
   font-size: 1.4rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 
+/* MENU DESKTOP */
 .navMenu {
-  position: relative;
-  width: 100%;
-  flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
+  flex: 1;
 }
 
 .navList {
-  position: relative;
   display: flex;
-  align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
-.navItem {
-  position: relative;
-}
-
-/* nav link */
+/* LINK */
 .navLink {
-  line-height: 1;
-  font-weight: 600;
   position: relative;
+  font-weight: 600;
   color: #000;
+  transition: 0.3s;
 }
 
-/* nav toggle */
+/* 🔥 UNDERLINE HOVER */
+.navLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+/* TOGGLE */
 .navBarToggle {
-  background: transparent;
-  font-size: 2rem;
   display: none;
+  font-size: 2rem;
+  background: transparent;
 }
 
-/* nav close toggle */
+/* CLOSE */
 .navBarClose {
+  display: none;
   position: absolute;
   top: 20px;
-  right: 15px;
+  right: 20px;
   font-size: 2rem;
-  display: none;
   background: transparent;
 }
 
+/* ================= MOBILE ================= */
+
 @media (max-width: 1023.98px) {
-  .navBar {
-    top: 20px;
+  .navBarToggle {
+    display: block;
   }
 
-  .navMenu {
-    position: fixed;
-    inset: 0;
-    height: 100vh;
-    justify-content: center;
-    background: #dadada;
-    transform: translate(150%) rotate(180deg);
-    opacity: 0;
-    transition:
-      transform 0.4s ease,
-      opacity 0.4s ease;
-    transform-origin: center;
-  }
-
-  .navMenuShow {
-    transform: translate(0) rotate(0deg);
-    opacity: 1;
-  }
-
-  .navLogoArea {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex: 1;
-  }
-
-  .navBarToggle,
   .navBarClose {
     display: block;
   }
 
-  .navList {
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+  .navLogoArea {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 
+  /* 🔥 FULL SCREEN MENU */
+  .navMenu {
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+
+    transform: translateY(-100%);
+    opacity: 0;
+
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+
+  .navMenuShow {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  /* LIST */
+  .navList {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  /* 🔥 STAGGER ITEMS */
+  .navItem {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.4s ease;
+  }
+
+  .navMenuShow .navItem {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .navMenuShow .navItem:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  .navMenuShow .navItem:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  .navMenuShow .navItem:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+  .navMenuShow .navItem:nth-child(4) {
+    transition-delay: 0.4s;
+  }
+  .navMenuShow .navItem:nth-child(5) {
+    transition-delay: 0.5s;
+  }
+
+  /* BIG TEXT */
   .navLink {
     font-size: 2rem;
   }

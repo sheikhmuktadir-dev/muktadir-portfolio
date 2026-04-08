@@ -10,9 +10,9 @@ export default function Navbar() {
 
   useEffect(() => {
     if (navToggle) {
-      document.body.style.overflow = "hidden"; // disable scroll
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = ""; // enable scroll
+      document.body.style.overflow = "";
     }
 
     return () => {
@@ -23,14 +23,14 @@ export default function Navbar() {
   return (
     <nav className={Style.navBar} id="top">
       <div className="container">
-        {/* nav logo area */}
         <div className={Style.navBarInner}>
+          {/* ✅ LOGO */}
           <div className={Style.navLogoArea}>
             <Link to="/" className={Style.navLogo}>
               <span>Muktadir.</span>
             </Link>
 
-            {/* nav toggle */}
+            {/* ✅ TOGGLE */}
             <button
               onClick={() => setNavToggle(true)}
               className={Style.navBarToggle}
@@ -39,40 +39,40 @@ export default function Navbar() {
             </button>
           </div>
 
+          {/* ✅ MENU */}
           <div
             className={`${Style.navMenu} ${navToggle ? Style.navMenuShow : ""}`}
           >
-            {/* nav close toggle */}
+            {/* CLOSE BUTTON */}
             <button
               className={Style.navBarClose}
               onClick={() => setNavToggle(false)}
             >
               <IoMdClose />
             </button>
+
             <ul className={Style.navList}>
-              {navLinks?.map((list, index) => {
-                return (
-                  <li className={Style.navItem} key={index || list.label}>
-                    {list.index ? (
-                      <Link
-                        to={list.path}
-                        onClick={() => setNavToggle(false)}
-                        className={Style.navLink}
-                      >
-                        {list.label}
-                      </Link>
-                    ) : (
-                      <a
-                        href={list.path}
-                        onClick={() => setNavToggle(false)}
-                        className={Style.navLink}
-                      >
-                        {list.label}
-                      </a>
-                    )}
-                  </li>
-                );
-              })}
+              {navLinks?.map((list, index) => (
+                <li className={Style.navItem} key={index}>
+                  {list.index ? (
+                    <Link
+                      to={list.path}
+                      onClick={() => setNavToggle(false)}
+                      className={Style.navLink}
+                    >
+                      {list.label}
+                    </Link>
+                  ) : (
+                    <a
+                      href={list.path}
+                      onClick={() => setNavToggle(false)}
+                      className={Style.navLink}
+                    >
+                      {list.label}
+                    </a>
+                  )}
+                </li>
+              ))}
             </ul>
           </div>
         </div>
