@@ -32,6 +32,16 @@ export default function WorkCard({ item }) {
         />
       </motion.div>
 
+      {/* <div className={Style.workCardTagFlex}>
+        {item.tech.map((list, i) => {
+          return (
+            <p className={Style.workCardTag} key={list || i}>
+              {list}
+            </p>
+          );
+        })}
+      </div> */}
+
       <motion.div
         className={Style.overlay}
         variants={{
@@ -48,13 +58,16 @@ export default function WorkCard({ item }) {
         <div className={Style.workCardText}>{item.title}</div>
 
         <motion.div
-          className={Style.workCardText}
+          className={Style.workCardTagFlex}
           variants={{
             hover: { x: 8 },
           }}
         >
-          <span>View Live</span>
-          <MdOutlineArrowOutward />
+          {item.tech.map((list, i) => (
+            <p className={Style.workCardTag} key={list || i}>
+              {list}
+            </p>
+          ))}
         </motion.div>
       </motion.div>
     </motion.a>

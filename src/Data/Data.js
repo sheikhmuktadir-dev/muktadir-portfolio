@@ -27,7 +27,7 @@ export const heroData = {
     last: "Muktadir",
   },
   role: {
-    text: "— Crafting high-performance web experiences with clean design and intuitive interactions.",
+    text: "— Creating scalable React dashboards and high-performance web apps.",
   },
   image: {
     src: "/images/circle.svg",
@@ -62,50 +62,59 @@ export const aboutData = {
   num: [
     {
       plus: "+",
-      number: "03",
-      text: "Years of Experience Building modern frontend applications",
+      number: "3",
+      text: "Years Experience  Modern Frontend Applications",
     },
     {
       plus: "+",
       number: "20",
-      text: "Projects Delivered Dashboards, SaaS, and scalable UI systems",
+      text: "Projects Delivered  Dashboards • SaaS • Scalable UI Systems",
     },
   ],
   image: "/images/banner.webp",
-  text: "I’m Sheikh Muktadir — a Frontend developer building scalable, high-performance React applications.",
-  para: "Based in Hyderabad with 3+ years of experience, I build scalable React applications focused on performance, clean architecture, and seamless user experience—turning complex ideas into fast, production-ready products.",
+  text: "I’m Sheikh Muktadir —  a Frontend Developer building scalable React apps and dashboards.",
+  para: "Based in Hyderabad with 3+ years of experience, I build scalable React applications and dashboards focused on performance and clean UI.",
 };
 
 export const worksCard = [
   {
     id: 1,
     title: "QuickFlix",
+    description: "Movie app with search and real-time API data",
+    tech: ["React", "Context API", "TMDB API"],
     image: "/images/quickflix.webp",
     link: "https://quickflix-shows.vercel.app/",
   },
   {
     id: 2,
     title: "Zenith UI",
+    description: "Admin dashboard with forms and analytics",
+    tech: ["React", "React Hook Form", "Recharts"],
     image: "/images/zenith.webp",
     link: "https://zenith-ui-dashboard.vercel.app/",
   },
   {
     id: 3,
     title: "Fitgo Fitness",
+    description: "Responsive fitness UI with reusable components",
+    tech: ["React", "CSS", "Responsive Design"],
     image: "/images/fitgo.webp",
     link: "https://fitgo-fitness.vercel.app/",
   },
   {
     id: 4,
     title: "Zaps Travel",
+    description: "Production travel website with modern UI",
+    tech: ["React", "JavaScript", "CSS"],
     image: "/images/zap.webp",
     link: "https://www.zapstravel.com/",
   },
 ];
 
 export const skillsData = [
-  "HTML/CSS",
-  "Git/Github",
+  "HTML & CSS",
+  "REST APIs",
+  "Git & GitHub",
   "Bootstrap",
   "Tailwind CSS",
   "JavaScript (ES6+)",
@@ -124,9 +133,9 @@ export const experience = [
     id: 1,
     company: "Bizionic Technologies",
     designation: "Frontend Developer",
-    duration: "Jul 2024 – Sep 2025",
+    duration: "Jul 2024 – Feb 2026",
     description:
-      "Architected reusable React component systems to standardize UI patterns and accelerate development cycles. Specialized in integrating complex REST APIs with structured async handling and optimizing frontend performance to ensure high-speed, responsive user interfaces.",
+      "Frontend Developer at Bizionic Technologies (Jul 2024 – Feb 2026), where I built reusable React components, integrated REST APIs, and optimized performance for responsive user interfaces.",
   },
   {
     id: 2,
@@ -134,7 +143,7 @@ export const experience = [
     designation: "Frontend Developer",
     duration: "Mar 2024 – Jun 2024",
     description:
-      "Engineered responsive interfaces with a focus on modularity and scalability. Refactored monolithic codebases into functional components and custom hooks, implementing performance strategies like lazy loading and code-splitting to enhance the overall user experience.",
+      "Frontend Developer at Pencap Technologies (Mar 2024 – Jun 2024), where I built responsive UIs, refactored code into reusable components and hooks, and optimized performance with lazy loading and code splitting.",
   },
   {
     id: 3,
@@ -142,7 +151,7 @@ export const experience = [
     designation: "UI Developer",
     duration: "Sep 2022 – Feb 2024",
     description:
-      "Transformed high-fidelity UI/UX designs into pixel-perfect, interactive React applications. Developed a library of shared UI components to maintain visual consistency and streamlined the hand-off process between design and engineering teams.",
+      "UI Developer at Zaps Marketing (Sep 2022 – Feb 2024), where I built pixel-perfect React UIs, created reusable components, and improved design-to-development workflows.",
   },
   {
     id: 4,
@@ -150,6 +159,6 @@ export const experience = [
     designation: "Technical Mentor",
     duration: "Apr 2022 – Aug 2022",
     description:
-      "Mentored junior developers in React.js, component architecture, and real-world project structuring, ensuring best practices in modern UI engineering and state management.",
+      "Technical Mentor at Naresh i Technologies (Apr 2022 – Aug 2022), where I guided developers in React, component architecture, and real-world project structuring.",
   },
 ];

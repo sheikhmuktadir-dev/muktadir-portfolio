@@ -32,6 +32,7 @@
 .navList {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 /* LINK */
@@ -73,6 +74,21 @@
   right: 20px;
   font-size: 2rem;
   background: transparent;
+}
+
+.navBarButton {
+  position: relative;
+  background: var(--black-bg);
+  color: #fff;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1;
+  border-radius: 100px;
+  padding: 0 20px;
 }
 
 /* ================= MOBILE ================= */
@@ -122,6 +138,7 @@
   .navList {
     flex-direction: column;
     gap: 25px;
+    align-items: start;
   }
 
   /* 🔥 STAGGER ITEMS */

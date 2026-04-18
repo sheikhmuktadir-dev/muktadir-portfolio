@@ -96,10 +96,10 @@ export default function About() {
                   }}
                   viewport={{ once: true }}
                 >
-                  <h2>
-                    <span>{list.plus}</span>
+                  <h3>
                     {list.number}
-                  </h2>
+                    <span>{list.plus}</span>
+                  </h3>
                   <p>{list.text}</p>
                 </motion.div>
               ))}

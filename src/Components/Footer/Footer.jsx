@@ -48,7 +48,7 @@ export default function Footer() {
               Ready to contribute as a Frontend React Developer.
             </h5>
             <h2 className={Style.footerHeading}>
-              <span>Let’s Work Together</span>
+              <span>Let’s work together</span>
             </h2>
           </div>
         </div>

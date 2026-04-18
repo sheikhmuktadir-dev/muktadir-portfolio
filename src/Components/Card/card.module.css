@@ -44,12 +44,14 @@
 .workCardBottomFlex {
   display: flex;
   position: absolute;
-  inset: 0;
   z-index: 100;
+  align-items: center;
   width: 100%;
-  align-items: end;
   z-index: 20;
-  padding: 25px 25px;
+  left: 0;
+  max-width: 100%;
+  padding: 20px 20px;
+  bottom: 0;
   justify-content: space-between;
 }
 
@@ -64,6 +66,25 @@
   font-size: 1.5rem;
   background: transparent;
   color: var(--black-text);
+}
+
+.workCardTagFlex {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.workCardTag {
+  background: var(--white-bg);
+  padding: 10px 20px;
+  border-radius: 100px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1;
+  flex: none;
+  border: 1px solid #dadada;
 }
 
 /* **********************  work card end*/
@@ -100,6 +121,11 @@
 
   .workCardBottomFlex {
     padding: 10px;
+    height: 100%;
+    justify-content: space-between;
+    align-items: start;
+    bottom: 0;
+    flex-direction: column;
   }
 
   .workCardText {
@@ -109,6 +135,14 @@
 
   .workCard {
     min-height: 320px;
+  }
+
+  .workCardTagFlex {
+    flex-wrap: wrap;
+  }
+
+  .workCardTag {
+    padding: 7px 15px;
   }
 }
 
@@ -166,7 +200,7 @@
   }
 
   .workCardBottomFlex {
-    padding: 25px 20px;
+    padding: 20px 20px;
   }
 
   .workCardText {

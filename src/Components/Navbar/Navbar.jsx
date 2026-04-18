@@ -24,13 +24,11 @@ export default function Navbar() {
     <nav className={Style.navBar} id="top">
       <div className="container">
         <div className={Style.navBarInner}>
-          {/* ✅ LOGO */}
           <div className={Style.navLogoArea}>
             <Link to="/" className={Style.navLogo}>
               <span>Muktadir.</span>
             </Link>
 
-            {/* ✅ TOGGLE */}
             <button
               onClick={() => setNavToggle(true)}
               className={Style.navBarToggle}
@@ -39,7 +37,6 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* ✅ MENU */}
           <div
             className={`${Style.navMenu} ${navToggle ? Style.navMenuShow : ""}`}
           >
@@ -73,6 +70,16 @@ export default function Navbar() {
                   )}
                 </li>
               ))}
+
+              <li className={Style.navItem}>
+                <a
+                  href="/Sheikh_Muktadir_Frontend_reactjs.pdf"
+                  download
+                  className={Style.navBarButton}
+                >
+                  Download CV
+                </a>
+              </li>
             </ul>
           </div>
         </div>
