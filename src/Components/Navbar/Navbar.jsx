@@ -73,7 +73,7 @@ export default function Navbar() {
 
               <li className={Style.navItem}>
                 <a
-                  href="/Sheikh_Muktadir_Frontend_React_CV.pdf"
+                  href="/Sheikh_Muktadir_Frontend_Developer_Resume.pdf"
                   download
                   className={Style.navBarButton}
                 >
