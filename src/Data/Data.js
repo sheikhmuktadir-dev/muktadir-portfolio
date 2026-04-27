@@ -27,7 +27,7 @@ export const heroData = {
     last: "Muktadir",
   },
   role: {
-    text: "— Creating scalable React dashboards and high-performance web apps.",
+    text: "— Frontend Developer | React.js | 3+ Years Experience | Building Scalable Dashboards, API-Driven Applications & High-Performance UI Systems",
   },
   image: {
     src: "/images/circle.svg",
@@ -63,7 +63,7 @@ export const aboutData = {
     {
       plus: "+",
       number: "3",
-      text: "Years Experience  Modern Frontend Applications",
+      text: "Years Experience   Modern Frontend Development ",
     },
     {
       plus: "+",
@@ -72,8 +72,8 @@ export const aboutData = {
     },
   ],
   image: "/images/banner.webp",
-  text: "I’m Sheikh Muktadir —  a Frontend Developer building scalable React apps and dashboards.",
-  para: "Based in Hyderabad with 3+ years of experience, I build scalable React applications and dashboards focused on performance and clean UI.",
+  text: "I’m Sheikh Muktadir — a Frontend Developer building scalable React applications, dashboards, and modern UI systems.",
+  para: "Based in Hyderabad with 3+ years of experience, I specialize in creating high-performance, API-driven web applications with a focus on clean UI, reusable components, and scalable architecture. I have built multiple dashboards, SaaS-style interfaces, and production-ready frontend systems focused on performance, maintainability, and user experience.",
 };
 
 export const worksCard = [
@@ -112,14 +112,14 @@ export const worksCard = [
 ];
 
 export const skillsData = [
-  "HTML & CSS",
+  "React.js",
   "REST APIs",
   "Git & GitHub",
-  "Bootstrap",
   "Tailwind CSS",
+  "Bootstrap",
+  "HTML & CSS",
   "JavaScript (ES6+)",
   "Redux Toolkit",
-  "React.Js",
 ];
 
 export const footerNavLinks = [
@@ -135,7 +135,7 @@ export const experience = [
     designation: "Frontend Developer",
     duration: "Jul 2024 – Feb 2026",
     description:
-      "Frontend Developer at Bizionic Technologies (Jul 2024 – Feb 2026), where I built reusable React components, integrated REST APIs, and optimized performance for responsive user interfaces.",
+      "Frontend Developer at Bizionic Technologies (Jul 2024 – Feb 2026), where I developed reusable React component architecture, integrated REST APIs, and improved application performance for scalable and responsive web interfaces.",
   },
   {
     id: 2,
@@ -143,7 +143,7 @@ export const experience = [
     designation: "Frontend Developer",
     duration: "Mar 2024 – Jun 2024",
     description:
-      "Frontend Developer at Pencap Technologies (Mar 2024 – Jun 2024), where I built responsive UIs, refactored code into reusable components and hooks, and optimized performance with lazy loading and code splitting.",
+      "Frontend Developer at Pencap Technologies (Mar 2024 – Jun 2024), where I built responsive UI components, refactored legacy code into reusable components and custom hooks, and improved performance using lazy loading and code splitting techniques.",
   },
   {
     id: 3,
@@ -151,7 +151,7 @@ export const experience = [
     designation: "UI Developer",
     duration: "Sep 2022 – Feb 2024",
     description:
-      "UI Developer at Zaps Marketing (Sep 2022 – Feb 2024), where I built pixel-perfect React UIs, created reusable components, and improved design-to-development workflows.",
+      "UI Developer at Zaps Marketing (Sep 2022 – Feb 2024), where I developed pixel-perfect React interfaces, created reusable UI components, and improved design-to-development workflow efficiency.",
   },
   {
     id: 4,
@@ -159,6 +159,6 @@ export const experience = [
     designation: "Technical Mentor",
     duration: "Apr 2022 – Aug 2022",
     description:
-      "Technical Mentor at Naresh i Technologies (Apr 2022 – Aug 2022), where I guided developers in React, component architecture, and real-world project structuring.",
+      "Technical Mentor at Naresh i Technologies (Apr 2022 – Aug 2022), where I mentored developers in React fundamentals, component architecture, and real-world project structuring.",
   },
 ];

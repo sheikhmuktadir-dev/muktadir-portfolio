@@ -1,7 +1,6 @@
 import Style from "./footer.module.css";
 import { FaCircleArrowUp } from "react-icons/fa6";
-import { footerNavLinks } from "../../Data/Data";
-import { socialLinks } from "../../Data/Data";
+import { footerNavLinks, socialLinks } from "../../Data/Data";
 
 export default function Footer() {
   return (
@@ -24,8 +23,10 @@ export default function Footer() {
                     href={item.url}
                     className={Style.socialBtn}
                     aria-label={item.label}
-                    target={item.label === "Email" ? "" : "_blank"}
-                    rel="noopener noreferrer"
+                    target={item.label === "Email" ? undefined : "_blank"}
+                    rel={
+                      item.label === "Email" ? undefined : "noopener noreferrer"
+                    }
                   >
                     <Icon />
                   </a>
@@ -57,22 +58,18 @@ export default function Footer() {
       <div className={Style.footerBottom}>
         <div className="container">
           <div className={Style.footerBottomFlex}>
-            {/* designer name */}
             <p className={Style.footerDesigner}>
               Designed by <span>Sheikh Muktadir</span>.
             </p>
 
-            {/* footer links */}
             <ul className={Style.footerList}>
-              {footerNavLinks?.map((items, index) => {
-                return (
-                  <li className={Style.footerItem} key={items.name || index}>
-                    <a href={items.href} className={Style.footerLink}>
-                      {items.name}
-                    </a>
-                  </li>
-                );
-              })}
+              {footerNavLinks?.map((items, index) => (
+                <li className={Style.footerItem} key={items.name || index}>
+                  <a href={items.href} className={Style.footerLink}>
+                    {items.name}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
