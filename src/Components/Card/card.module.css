@@ -3,7 +3,7 @@
   max-width: 100%;
   width: 100%;
   height: 100%;
-  background: #dddddd;
+  background: #dedede;
   z-index: 50;
   border-radius: 14px;
   display: flex;
@@ -15,18 +15,19 @@
 }
 
 .workCard:hover {
-  transform: translateY(-10px);
+  transform: translateY(-15px);
 }
 
 .workCardImageArea {
   position: relative;
-  max-width: 100%;
+  max-width: 80%;
+  width: 100%;
 }
 
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   opacity: 0;
   transition: opacity 0.4s ease;
   z-index: 10;
@@ -68,6 +69,10 @@
   color: var(--black-text);
 }
 
+.workCard:hover .workCardText {
+  color: var(--white-text);
+}
+
 .workCardTagFlex {
   display: flex;
   align-items: center;
@@ -84,15 +89,15 @@
   text-align: center;
   line-height: 1;
   flex: none;
-  border: 1px solid #dadada;
+  border: 1px solid #dedede;
 }
 
 /* **********************  work card end*/
 
 .skillCard {
-  max-width: 480px;
+  max-width: 500px;
   width: 100%;
-  height: 480px;
+  height: 500px;
   padding: 80px;
   background: var(--black-bg);
   color: var(--white-text);
@@ -190,13 +195,13 @@
 
 @media (min-width: 1280px) and (max-width: 1599.98px) {
   .skillCard {
-    height: 440px;
+    height: 450px;
     font-size: 2.5rem;
-    max-width: 440px;
+    max-width: 450px;
   }
 
   .workCard {
-    min-height: 520px;
+    min-height: 540px;
   }
 
   .workCardBottomFlex {

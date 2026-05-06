@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Style from "./navbar.module.css";
 import { navLinks } from "../../Data/Data";
-import { BsListNested } from "react-icons/bs";
+import { FiMenu } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
 import { useState, useEffect } from "react";
 
@@ -33,7 +33,7 @@ export default function Navbar() {
               onClick={() => setNavToggle(true)}
               className={Style.navBarToggle}
             >
-              <BsListNested />
+              <FiMenu />
             </button>
           </div>
 

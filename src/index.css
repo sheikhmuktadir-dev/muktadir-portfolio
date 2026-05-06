@@ -158,19 +158,19 @@
   --btn-size: 45px;
 
   /* space */
-  --section-space: 200px 0;
-  --section-space-top: 200px 0 0;
-  --section-space-bottom: 0 0 200px;
-  --section-space-small: 100px 0;
+  --section-space: 180px 0;
+  --section-space-top: 180px 0 0;
+  --section-space-bottom: 0 0 180px;
+  --section-space-small: 120px 0;
   --content-top-space: 80px 0 0;
 
   /* bg */
   --black-bg: #0f0f0f;
-  --white-bg: #eee;
+  --white-bg: #eeeeee;
 
   /* color */
   --black-text: #0f0f0f;
-  --white-text: #eee;
+  --white-text: #eeeeee;
 }
 
 *,
@@ -190,7 +190,7 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.4em;
   background: var(--white-bg);
@@ -200,7 +200,7 @@ body {
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 1900px;
   width: 100%;
   position: relative;
   margin: 0 auto;
@@ -258,7 +258,9 @@ p {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.4;
+  font-family: "Creato Display", sans-serif;
 }
+
 h1 {
   font-size: 16vw;
   line-height: 0.9em;
@@ -269,7 +271,7 @@ h1 {
 h2 {
   font-size: 10rem;
   font-weight: 500;
-  line-height: 0.9em;
+  line-height: 1em;
   font-family: "Creato Display", sans-serif;
   color: var(--black-text);
 }
@@ -283,7 +285,7 @@ h3 {
 h4 {
   font-size: 4rem;
   font-weight: 500;
-  line-height: 1.1em;
+  line-height: 1.2em;
   font-family: "Creato Display", sans-serif;
   color: var(--black-text);
 }
@@ -469,10 +471,10 @@ h6 {
 @media (min-width: 1024px) and (max-width: 1279.98px) {
   :root {
     /* space */
-    --section-space: 200px 0;
-    --section-space-top: 200px 0 0;
-    --section-space-bottom: 0 0 200px;
-    --section-space-small: 100px 0;
+    --section-space: 180px 0;
+    --section-space-top: 180px 0 0;
+    --section-space-bottom: 0 0 180px;
+    --section-space-small: 120px 0;
     --content-top-space: 80px 0 0;
   }
 
@@ -499,10 +501,10 @@ h6 {
 @media (min-width: 1280px) and (max-width: 1599.98px) {
   :root {
     /* space */
-    --section-space: 200px 0;
-    --section-space-top: 200px 0 0;
-    --section-space-bottom: 0 0 200px;
-    --section-space-small: 100px 0;
+    --section-space: 180px 0;
+    --section-space-top: 180px 0 0;
+    --section-space-bottom: 0 0 180px;
+    --section-space-small: 120px 0;
     --content-top-space: 80px 0 0;
   }
 

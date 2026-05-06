@@ -72,8 +72,9 @@ export const aboutData = {
     },
   ],
   image: "/images/banner.webp",
-  text: "I’m Sheikh Muktadir — a Frontend Developer building scalable React applications, dashboards, and modern UI systems.",
-  para: "Based in Hyderabad with 3+ years of experience, I specialize in creating high-performance, API-driven web applications with a focus on clean UI, reusable components, and scalable architecture. I have built multiple dashboards, SaaS-style interfaces, and production-ready frontend systems focused on performance, maintainability, and user experience.",
+  text: "Frontend Developer with 3+ years of experience building scalable React applications and modern UI systems.",
+
+  para: "Based in Hyderabad, I specialize in developing high-performance, API-driven web applications with a focus on clean UI, reusable components, and scalable frontend architecture. Experienced in building dashboards and SaaS-style interfaces.",
 };
 
 export const worksCard = [
@@ -95,7 +96,7 @@ export const worksCard = [
   },
   {
     id: 3,
-    title: "Fitgo Fitness",
+    title: "Fitgo",
     description: "Responsive fitness UI with reusable components",
     tech: ["React", "CSS", "Responsive Design"],
     image: "/images/fitgo.webp",
@@ -113,13 +114,13 @@ export const worksCard = [
 
 export const skillsData = [
   "React.js",
-  "REST APIs",
   "Git & GitHub",
   "Tailwind CSS",
   "Bootstrap",
   "HTML & CSS",
   "JavaScript (ES6+)",
   "Redux Toolkit",
+  "Next.js",
 ];
 
 export const footerNavLinks = [
