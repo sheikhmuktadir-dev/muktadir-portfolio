@@ -120,7 +120,6 @@ export const skillsData = [
   "HTML & CSS",
   "JavaScript (ES6+)",
   "Redux Toolkit",
-  "Next.js",
 ];
 
 export const footerNavLinks = [
