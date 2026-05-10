@@ -119,6 +119,7 @@ export const skillsData = [
   "Bootstrap",
   "HTML & CSS",
   "JavaScript (ES6+)",
+  "Next.js",
   "Redux Toolkit",
 ];
 
